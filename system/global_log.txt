@@ -1,0 +1,889 @@
+[INIT] System initialized
+[2026-03-17 21:42:51] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 21:42:51] Rozpoczęcie cyklu analizy
+[2026-03-17 21:42:51] Analiza zakończona: 3 projektów, 6 problemów
+[2026-03-17 21:42:52] Plan wygenerowany: 6 zadań, wysłano do Todoist: 0
+[2026-03-17 21:42:52] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 21:42:52] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_21-42-52.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 21:42:52] main_loop: cycle_completed
+[2026-03-17 21:42:52] Przejście do uśpienia na 60 sekund
+[2026-03-17 21:43:40] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 21:43:40] Rozpoczęcie cyklu analizy
+[2026-03-17 21:43:40] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 21:43:40] Plan wygenerowany: 3 zadań, wysłano do Todoist: 0
+[2026-03-17 21:43:40] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 21:43:40] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_21-43-40.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 21:43:40] main_loop: cycle_completed
+[2026-03-17 21:43:40] Przejście do uśpienia na 60 sekund
+[2026-03-17 21:45:22] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 21:45:22] Rozpoczęcie cyklu analizy
+[2026-03-17 21:45:22] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 21:45:24] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 21:45:24] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 21:45:24] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_21-45-24.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 21:45:24] main_loop: cycle_completed
+[2026-03-17 21:45:24] Przejście do uśpienia na 60 sekund
+[2026-03-17 21:52:57] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 21:52:57] Rozpoczęcie cyklu analizy
+[2026-03-17 21:52:57] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 21:53:00] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 21:53:00] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 21:53:00] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-17 21:53:00] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_21-53-00.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 21:53:00] main_loop: cycle_completed
+[2026-03-17 21:53:00] Przejście do uśpienia na 60 sekund
+[2026-03-17 21:57:58] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 21:57:58] Rozpoczęcie cyklu analizy
+[2026-03-17 21:57:58] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 21:58:01] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 21:58:01] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 21:58:01] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-17 21:58:01] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-17 21:58:02] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_21-58-02.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 21:58:02] main_loop: cycle_completed
+[2026-03-17 21:58:02] Przejście do uśpienia na 60 sekund
+[2026-03-17 22:03:57] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-17 22:03:57] Rozpoczęcie cyklu analizy
+[2026-03-17 22:03:57] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 22:03:59] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 22:03:59] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 22:03:59] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-17 22:03:59] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-17 22:04:00] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_22-04-00.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 22:04:00] main_loop: cycle_completed
+[2026-03-17 22:04:00] Przejście do uśpienia na 60 sekund
+[2026-03-17 22:05:00] Rozpoczęcie cyklu analizy
+[2026-03-17 22:05:00] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 22:05:04] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 22:05:04] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 22:05:04] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-17 22:05:04] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-17 22:05:04] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_22-05-04.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 22:05:04] main_loop: cycle_completed
+[2026-03-17 22:05:04] Przejście do uśpienia na 60 sekund
+[2026-03-17 22:06:04] Rozpoczęcie cyklu analizy
+[2026-03-17 22:06:04] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-17 22:06:07] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-17 22:06:07] Śledzenie zakończone: 0 stagnacji
+[2026-03-17 22:06:07] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-17 22:06:07] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-17 22:06:07] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-17_22-06-07.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-17_report.md
+[2026-03-17 22:06:07] main_loop: cycle_completed
+[2026-03-17 22:06:07] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:25:38] Development Assistant V2 - Uruchomienie pętli głównej
+[2026-03-18 07:25:38] Rozpoczęcie cyklu analizy
+[2026-03-18 07:25:38] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:25:40] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:25:40] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:25:40] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:25:40] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:25:40] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-25-40.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:25:40] main_loop: cycle_completed
+[2026-03-18 07:25:40] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:26:40] Rozpoczęcie cyklu analizy
+[2026-03-18 07:26:40] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:26:42] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:26:42] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:26:42] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:26:42] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:26:42] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-26-42.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:26:42] main_loop: cycle_completed
+[2026-03-18 07:26:42] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:27:42] Rozpoczęcie cyklu analizy
+[2026-03-18 07:27:42] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:27:44] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:27:44] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:27:44] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:27:44] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:27:44] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-27-44.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:27:44] main_loop: cycle_completed
+[2026-03-18 07:27:44] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:28:44] Rozpoczęcie cyklu analizy
+[2026-03-18 07:28:44] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:28:46] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:28:46] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:28:46] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:28:46] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:28:46] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-28-46.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:28:46] main_loop: cycle_completed
+[2026-03-18 07:28:46] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:29:46] Rozpoczęcie cyklu analizy
+[2026-03-18 07:29:46] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:29:47] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:29:47] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:29:47] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:29:47] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:29:47] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-29-47.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:29:47] main_loop: cycle_completed
+[2026-03-18 07:29:47] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:30:47] Rozpoczęcie cyklu analizy
+[2026-03-18 07:30:47] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:30:49] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:30:49] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:30:49] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:30:49] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:30:49] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-30-49.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:30:49] main_loop: cycle_completed
+[2026-03-18 07:30:49] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:31:49] Rozpoczęcie cyklu analizy
+[2026-03-18 07:31:49] Analiza zakończona: 3 projektów, 0 problemów
+[2026-03-18 07:31:51] Plan wygenerowany: 3 zadań, wysłano do Todoist: 3
+[2026-03-18 07:31:51] Śledzenie zakończone: 0 stagnacji
+[2026-03-18 07:31:51] Analiza efektywności zakończona: 0 rekomendacji
+[2026-03-18 07:31:51] Analiza trendów zakończona: 0 rekomendacji
+[2026-03-18 07:31:51] Raport wygenerowany: lokalnie=memory/daily_logs/report_2026-03-18_07-31-51.md, obsidian=Obsidian/DevelopmentAssistant/daily_logs/2026-03-18_report.md
+[2026-03-18 07:31:51] main_loop: cycle_completed
+[2026-03-18 07:31:51] Przejście do uśpienia na 60 sekund
+[2026-03-18 07:48:54] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 07:50:43] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 07:56:56] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 07:58:23] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 07:59:59] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 08:21:52] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 08:23:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 08:23:03] Lekcja dnia zapisana: Obsidian/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 08:23:05] Raport dzienny wygenerowany: Obsidian/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 08:23:05] Czekanie 54.827179 sekund do następnego sprawdzenia
+[2026-03-18 08:38:07] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 08:50:25] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 08:57:38] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 09:08:00] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 09:08:00] Przygotowano 3 zadań do wysłania
+[2026-03-18 09:08:04] Wysłano 3 zadań do Todoist
+[2026-03-18 09:09:24] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 09:09:24] Przygotowano 3 zadań do wysłania
+[2026-03-18 09:09:26] Wysłano 3 zadań do Todoist
+[2026-03-18 09:10:00] Przygotowano 3 zadań do wysłania
+[2026-03-18 09:10:06] Wysłano 3 zadań do Todoist
+[2026-03-18 10:19:46] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 10:19:46] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:19:46] Brak zadań do wysłania
+[2026-03-18 10:20:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:20:01] Brak zadań do wysłania
+[2026-03-18 10:21:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:21:01] Brak zadań do wysłania
+[2026-03-18 10:22:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:22:01] Brak zadań do wysłania
+[2026-03-18 10:23:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:23:00] Brak zadań do wysłania
+[2026-03-18 10:23:18] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 10:23:19] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:23:19] Brak zadań do wysłania
+[2026-03-18 10:23:55] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 10:23:55] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:23:55] Brak zadań do wysłania
+[2026-03-18 10:24:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:24:00] Brak zadań do wysłania
+[2026-03-18 10:25:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:25:00] Brak zadań do wysłania
+[2026-03-18 10:26:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:26:00] Brak zadań do wysłania
+[2026-03-18 10:27:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:27:00] Brak zadań do wysłania
+[2026-03-18 10:28:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:28:00] Brak zadań do wysłania
+[2026-03-18 10:29:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:29:01] Brak zadań do wysłania
+[2026-03-18 10:30:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:30:00] Brak zadań do wysłania
+[2026-03-18 10:31:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:31:00] Brak zadań do wysłania
+[2026-03-18 10:32:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:32:00] Brak zadań do wysłania
+[2026-03-18 10:33:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:33:00] Brak zadań do wysłania
+[2026-03-18 10:34:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:34:00] Brak zadań do wysłania
+[2026-03-18 10:35:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:35:01] Brak zadań do wysłania
+[2026-03-18 10:36:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:36:00] Brak zadań do wysłania
+[2026-03-18 10:37:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:37:00] Brak zadań do wysłania
+[2026-03-18 10:38:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:38:01] Brak zadań do wysłania
+[2026-03-18 10:39:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:39:00] Brak zadań do wysłania
+[2026-03-18 10:40:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:40:00] Brak zadań do wysłania
+[2026-03-18 10:41:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:41:00] Brak zadań do wysłania
+[2026-03-18 10:42:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:42:00] Brak zadań do wysłania
+[2026-03-18 10:43:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:43:00] Brak zadań do wysłania
+[2026-03-18 10:44:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:44:00] Brak zadań do wysłania
+[2026-03-18 10:45:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:45:00] Brak zadań do wysłania
+[2026-03-18 10:46:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:46:00] Brak zadań do wysłania
+[2026-03-18 10:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:47:00] Brak zadań do wysłania
+[2026-03-18 10:48:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:48:00] Brak zadań do wysłania
+[2026-03-18 10:49:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:49:00] Brak zadań do wysłania
+[2026-03-18 10:50:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:50:00] Brak zadań do wysłania
+[2026-03-18 10:51:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:51:00] Brak zadań do wysłania
+[2026-03-18 10:52:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:52:00] Brak zadań do wysłania
+[2026-03-18 10:53:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:53:00] Brak zadań do wysłania
+[2026-03-18 10:54:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:54:01] Brak zadań do wysłania
+[2026-03-18 10:55:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:55:01] Brak zadań do wysłania
+[2026-03-18 10:56:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:56:01] Brak zadań do wysłania
+[2026-03-18 10:57:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:57:00] Brak zadań do wysłania
+[2026-03-18 10:58:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:58:00] Brak zadań do wysłania
+[2026-03-18 10:59:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 10:59:00] Brak zadań do wysłania
+[2026-03-18 11:00:02] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:00:02] Brak zadań do wysłania
+[2026-03-18 11:01:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:01:00] Brak zadań do wysłania
+[2026-03-18 11:02:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:02:01] Brak zadań do wysłania
+[2026-03-18 11:03:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:03:01] Brak zadań do wysłania
+[2026-03-18 11:04:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:04:00] Brak zadań do wysłania
+[2026-03-18 11:05:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:05:01] Brak zadań do wysłania
+[2026-03-18 11:06:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:06:00] Brak zadań do wysłania
+[2026-03-18 11:07:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:07:00] Brak zadań do wysłania
+[2026-03-18 11:08:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:08:00] Brak zadań do wysłania
+[2026-03-18 11:09:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:09:00] Brak zadań do wysłania
+[2026-03-18 11:10:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:10:01] Brak zadań do wysłania
+[2026-03-18 11:11:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:11:00] Brak zadań do wysłania
+[2026-03-18 11:12:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:12:01] Brak zadań do wysłania
+[2026-03-18 11:13:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:13:00] Brak zadań do wysłania
+[2026-03-18 11:14:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:14:00] Brak zadań do wysłania
+[2026-03-18 11:15:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:15:01] Brak zadań do wysłania
+[2026-03-18 11:16:03] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:16:03] Brak zadań do wysłania
+[2026-03-18 11:17:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:17:00] Brak zadań do wysłania
+[2026-03-18 11:18:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:18:00] Brak zadań do wysłania
+[2026-03-18 11:19:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:19:00] Brak zadań do wysłania
+[2026-03-18 11:20:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:20:00] Brak zadań do wysłania
+[2026-03-18 11:21:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:21:00] Brak zadań do wysłania
+[2026-03-18 11:22:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:22:00] Brak zadań do wysłania
+[2026-03-18 11:23:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:23:01] Brak zadań do wysłania
+[2026-03-18 11:24:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:24:00] Brak zadań do wysłania
+[2026-03-18 11:43:22] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:43:22] Brak zadań do wysłania
+[2026-03-18 11:44:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:44:00] Brak zadań do wysłania
+[2026-03-18 11:45:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:45:00] Brak zadań do wysłania
+[2026-03-18 11:46:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:46:00] Brak zadań do wysłania
+[2026-03-18 11:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:47:00] Brak zadań do wysłania
+[2026-03-18 11:48:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:48:00] Brak zadań do wysłania
+[2026-03-18 11:49:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:49:01] Brak zadań do wysłania
+[2026-03-18 11:50:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:50:01] Brak zadań do wysłania
+[2026-03-18 11:51:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:51:01] Brak zadań do wysłania
+[2026-03-18 11:52:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:52:00] Brak zadań do wysłania
+[2026-03-18 11:53:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:53:00] Brak zadań do wysłania
+[2026-03-18 11:54:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:54:01] Brak zadań do wysłania
+[2026-03-18 11:55:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:55:00] Brak zadań do wysłania
+[2026-03-18 11:56:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:56:00] Brak zadań do wysłania
+[2026-03-18 11:57:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:57:01] Brak zadań do wysłania
+[2026-03-18 11:58:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:58:00] Brak zadań do wysłania
+[2026-03-18 11:59:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 11:59:01] Brak zadań do wysłania
+[2026-03-18 12:00:03] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:00:03] Brak zadań do wysłania
+[2026-03-18 12:01:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:01:01] Brak zadań do wysłania
+[2026-03-18 12:02:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:02:01] Brak zadań do wysłania
+[2026-03-18 12:03:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:03:00] Brak zadań do wysłania
+[2026-03-18 12:04:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:04:01] Brak zadań do wysłania
+[2026-03-18 12:05:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:05:00] Brak zadań do wysłania
+[2026-03-18 12:06:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:06:01] Brak zadań do wysłania
+[2026-03-18 12:07:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:07:00] Brak zadań do wysłania
+[2026-03-18 12:08:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:08:00] Brak zadań do wysłania
+[2026-03-18 12:09:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:09:00] Brak zadań do wysłania
+[2026-03-18 12:10:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:10:00] Brak zadań do wysłania
+[2026-03-18 12:11:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:11:00] Brak zadań do wysłania
+[2026-03-18 12:12:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:12:01] Brak zadań do wysłania
+[2026-03-18 12:13:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:13:00] Brak zadań do wysłania
+[2026-03-18 12:14:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:14:00] Brak zadań do wysłania
+[2026-03-18 12:15:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:15:00] Brak zadań do wysłania
+[2026-03-18 12:16:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:16:00] Brak zadań do wysłania
+[2026-03-18 12:17:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:17:00] Brak zadań do wysłania
+[2026-03-18 12:18:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:18:00] Brak zadań do wysłania
+[2026-03-18 12:19:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:19:00] Brak zadań do wysłania
+[2026-03-18 12:20:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:20:00] Brak zadań do wysłania
+[2026-03-18 12:21:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:21:00] Brak zadań do wysłania
+[2026-03-18 12:22:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:22:00] Brak zadań do wysłania
+[2026-03-18 12:23:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:23:00] Brak zadań do wysłania
+[2026-03-18 12:24:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:24:00] Brak zadań do wysłania
+[2026-03-18 12:25:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:25:00] Brak zadań do wysłania
+[2026-03-18 12:26:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:26:00] Brak zadań do wysłania
+[2026-03-18 12:27:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:27:00] Brak zadań do wysłania
+[2026-03-18 12:28:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:28:00] Brak zadań do wysłania
+[2026-03-18 12:29:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:29:00] Brak zadań do wysłania
+[2026-03-18 12:30:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:30:00] Brak zadań do wysłania
+[2026-03-18 12:31:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:31:00] Brak zadań do wysłania
+[2026-03-18 12:32:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:32:00] Brak zadań do wysłania
+[2026-03-18 12:33:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:33:00] Brak zadań do wysłania
+[2026-03-18 12:34:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:34:00] Brak zadań do wysłania
+[2026-03-18 12:35:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:35:00] Brak zadań do wysłania
+[2026-03-18 12:36:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:36:00] Brak zadań do wysłania
+[2026-03-18 12:37:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:37:00] Brak zadań do wysłania
+[2026-03-18 12:38:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:38:00] Brak zadań do wysłania
+[2026-03-18 12:39:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:39:00] Brak zadań do wysłania
+[2026-03-18 12:40:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:40:00] Brak zadań do wysłania
+[2026-03-18 12:41:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:41:00] Brak zadań do wysłania
+[2026-03-18 12:42:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:42:00] Brak zadań do wysłania
+[2026-03-18 12:43:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:43:00] Brak zadań do wysłania
+[2026-03-18 12:44:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:44:00] Brak zadań do wysłania
+[2026-03-18 12:45:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:45:00] Brak zadań do wysłania
+[2026-03-18 12:46:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:46:00] Brak zadań do wysłania
+[2026-03-18 12:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:47:00] Brak zadań do wysłania
+[2026-03-18 12:48:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:48:00] Brak zadań do wysłania
+[2026-03-18 12:49:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:49:00] Brak zadań do wysłania
+[2026-03-18 12:50:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:50:00] Brak zadań do wysłania
+[2026-03-18 12:51:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:51:00] Brak zadań do wysłania
+[2026-03-18 12:52:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:52:00] Brak zadań do wysłania
+[2026-03-18 12:53:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:53:00] Brak zadań do wysłania
+[2026-03-18 12:54:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:54:00] Brak zadań do wysłania
+[2026-03-18 12:55:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:55:00] Brak zadań do wysłania
+[2026-03-18 12:56:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:56:00] Brak zadań do wysłania
+[2026-03-18 12:57:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:57:00] Brak zadań do wysłania
+[2026-03-18 12:58:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:58:00] Brak zadań do wysłania
+[2026-03-18 12:59:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 12:59:00] Brak zadań do wysłania
+[2026-03-18 13:00:05] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:00:05] Brak zadań do wysłania
+[2026-03-18 13:01:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:01:01] Brak zadań do wysłania
+[2026-03-18 13:02:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:02:00] Brak zadań do wysłania
+[2026-03-18 13:18:38] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:18:38] Brak zadań do wysłania
+[2026-03-18 13:19:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:19:00] Brak zadań do wysłania
+[2026-03-18 13:20:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:20:00] Brak zadań do wysłania
+[2026-03-18 13:21:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:21:00] Brak zadań do wysłania
+[2026-03-18 13:22:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:22:00] Brak zadań do wysłania
+[2026-03-18 13:23:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:23:00] Brak zadań do wysłania
+[2026-03-18 13:24:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:24:00] Brak zadań do wysłania
+[2026-03-18 13:25:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:25:01] Brak zadań do wysłania
+[2026-03-18 13:26:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:26:00] Brak zadań do wysłania
+[2026-03-18 13:27:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:27:00] Brak zadań do wysłania
+[2026-03-18 13:28:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:28:00] Brak zadań do wysłania
+[2026-03-18 13:29:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:29:00] Brak zadań do wysłania
+[2026-03-18 13:30:00] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:44:32] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:44:33] Przygotowano 3 zadań do wysłania (z limitem 5)
+[2026-03-18 13:44:35] Wysłano 3 zadań do Todoist
+[2026-03-18 13:44:51] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:44:51] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:44:51] Brak zadań do wysłania
+[2026-03-18 13:44:59] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:44:59] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:44:59] Brak zadań do wysłania
+[2026-03-18 13:45:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:45:00] Brak zadań do wysłania
+[2026-03-18 13:45:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:45:00] Brak zadań do wysłania
+[2026-03-18 13:46:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:46:00] Brak zadań do wysłania
+[2026-03-18 13:46:04] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:46:04] Wykryto brak raportu - generowanie catch-up
+[2026-03-18 13:46:04] Work Detection (catch-up): STAGNATION
+[2026-03-18 13:46:04] Raport catch-up wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 13:46:05] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:46:05] Brak zadań do wysłania
+[2026-03-18 13:46:19] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 13:46:20] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:46:20] Brak zadań do wysłania
+[2026-03-18 13:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:47:00] Brak zadań do wysłania
+[2026-03-18 13:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:47:00] Brak zadań do wysłania
+[2026-03-18 13:48:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:48:00] Brak zadań do wysłania
+[2026-03-18 13:48:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:48:01] Brak zadań do wysłania
+[2026-03-18 13:49:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:49:00] Brak zadań do wysłania
+[2026-03-18 13:49:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:49:00] Brak zadań do wysłania
+[2026-03-18 13:50:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:50:00] Brak zadań do wysłania
+[2026-03-18 13:50:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:50:01] Brak zadań do wysłania
+[2026-03-18 13:51:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:51:00] Brak zadań do wysłania
+[2026-03-18 13:51:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:51:01] Brak zadań do wysłania
+[2026-03-18 13:52:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:52:01] Brak zadań do wysłania
+[2026-03-18 13:52:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:52:01] Brak zadań do wysłania
+[2026-03-18 13:53:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:53:01] Brak zadań do wysłania
+[2026-03-18 13:53:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:53:01] Brak zadań do wysłania
+[2026-03-18 13:54:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:54:01] Brak zadań do wysłania
+[2026-03-18 13:54:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:54:01] Brak zadań do wysłania
+[2026-03-18 13:55:00] Przygotowano 3 zadań do wysłania (z limitem 5)
+[2026-03-18 13:55:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:55:00] Brak zadań do wysłania
+[2026-03-18 13:55:06] Wysłano 3 zadań do Todoist
+[2026-03-18 13:56:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:56:01] Brak zadań do wysłania
+[2026-03-18 13:56:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:56:01] Brak zadań do wysłania
+[2026-03-18 13:57:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:57:00] Brak zadań do wysłania
+[2026-03-18 13:57:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 13:57:00] Brak zadań do wysłania
+[2026-03-18 14:00:52] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 14:00:52] system: Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 14:00:53] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:00:53] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:00:53] Brak zadań do wysłania
+[2026-03-18 14:00:53] system: Brak zadań do wysłania
+[2026-03-18 14:01:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:01:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:01:00] Brak zadań do wysłania
+[2026-03-18 14:01:00] system: Brak zadań do wysłania
+[2026-03-18 14:02:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:02:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:02:00] Brak zadań do wysłania
+[2026-03-18 14:02:00] system: Brak zadań do wysłania
+[2026-03-18 14:03:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:03:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:03:00] Brak zadań do wysłania
+[2026-03-18 14:03:00] system: Brak zadań do wysłania
+[2026-03-18 14:04:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:04:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:04:01] Brak zadań do wysłania
+[2026-03-18 14:04:01] system: Brak zadań do wysłania
+[2026-03-18 14:05:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:05:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:05:00] Brak zadań do wysłania
+[2026-03-18 14:05:00] system: Brak zadań do wysłania
+[2026-03-18 14:06:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:06:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:06:00] Brak zadań do wysłania
+[2026-03-18 14:06:00] system: Brak zadań do wysłania
+[2026-03-18 14:07:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:07:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:07:00] Brak zadań do wysłania
+[2026-03-18 14:07:00] system: Brak zadań do wysłania
+[2026-03-18 14:08:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:08:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:08:01] Brak zadań do wysłania
+[2026-03-18 14:08:01] system: Brak zadań do wysłania
+[2026-03-18 14:09:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:09:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:09:00] Brak zadań do wysłania
+[2026-03-18 14:09:00] system: Brak zadań do wysłania
+[2026-03-18 14:10:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:10:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:10:01] Brak zadań do wysłania
+[2026-03-18 14:10:01] system: Brak zadań do wysłania
+[2026-03-18 14:11:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:11:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:11:00] Brak zadań do wysłania
+[2026-03-18 14:11:00] system: Brak zadań do wysłania
+[2026-03-18 14:12:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:12:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:12:00] Brak zadań do wysłania
+[2026-03-18 14:12:00] system: Brak zadań do wysłania
+[2026-03-18 14:13:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:13:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:13:00] Brak zadań do wysłania
+[2026-03-18 14:13:00] system: Brak zadań do wysłania
+[2026-03-18 14:14:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:14:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:14:01] Brak zadań do wysłania
+[2026-03-18 14:14:01] system: Brak zadań do wysłania
+[2026-03-18 14:15:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:15:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:15:01] Brak zadań do wysłania
+[2026-03-18 14:15:01] system: Brak zadań do wysłania
+[2026-03-18 14:16:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:16:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:16:01] Brak zadań do wysłania
+[2026-03-18 14:16:01] system: Brak zadań do wysłania
+[2026-03-18 14:17:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:17:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:17:00] Brak zadań do wysłania
+[2026-03-18 14:17:00] system: Brak zadań do wysłania
+[2026-03-18 14:18:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:18:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:18:00] Brak zadań do wysłania
+[2026-03-18 14:18:00] system: Brak zadań do wysłania
+[2026-03-18 14:19:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:19:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:19:01] Brak zadań do wysłania
+[2026-03-18 14:19:01] system: Brak zadań do wysłania
+[2026-03-18 14:20:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:20:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:20:01] Brak zadań do wysłania
+[2026-03-18 14:20:01] system: Brak zadań do wysłania
+[2026-03-18 14:21:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:21:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:21:00] Brak zadań do wysłania
+[2026-03-18 14:21:00] system: Brak zadań do wysłania
+[2026-03-18 14:22:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:22:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:22:01] Brak zadań do wysłania
+[2026-03-18 14:22:01] system: Brak zadań do wysłania
+[2026-03-18 14:23:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:23:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:23:00] Brak zadań do wysłania
+[2026-03-18 14:23:00] system: Brak zadań do wysłania
+[2026-03-18 14:24:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:24:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:24:00] Brak zadań do wysłania
+[2026-03-18 14:24:00] system: Brak zadań do wysłania
+[2026-03-18 14:25:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:25:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:25:01] Brak zadań do wysłania
+[2026-03-18 14:25:01] system: Brak zadań do wysłania
+[2026-03-18 14:26:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:26:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:26:00] Brak zadań do wysłania
+[2026-03-18 14:26:00] system: Brak zadań do wysłania
+[2026-03-18 14:27:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:27:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:27:00] Brak zadań do wysłania
+[2026-03-18 14:27:00] system: Brak zadań do wysłania
+[2026-03-18 14:28:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:28:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:28:00] Brak zadań do wysłania
+[2026-03-18 14:28:00] system: Brak zadań do wysłania
+[2026-03-18 14:29:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:29:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:29:00] Brak zadań do wysłania
+[2026-03-18 14:29:00] system: Brak zadań do wysłania
+[2026-03-18 14:30:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:30:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:30:00] Brak zadań do wysłania
+[2026-03-18 14:30:00] system: Brak zadań do wysłania
+[2026-03-18 14:31:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:31:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:31:00] Brak zadań do wysłania
+[2026-03-18 14:31:00] system: Brak zadań do wysłania
+[2026-03-18 14:32:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:32:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:32:00] Brak zadań do wysłania
+[2026-03-18 14:32:00] system: Brak zadań do wysłania
+[2026-03-18 14:33:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:33:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:33:01] Brak zadań do wysłania
+[2026-03-18 14:33:01] system: Brak zadań do wysłania
+[2026-03-18 14:34:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:34:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:34:00] Brak zadań do wysłania
+[2026-03-18 14:34:00] system: Brak zadań do wysłania
+[2026-03-18 14:35:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:35:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:35:00] Brak zadań do wysłania
+[2026-03-18 14:35:00] system: Brak zadań do wysłania
+[2026-03-18 14:36:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:36:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:36:01] Brak zadań do wysłania
+[2026-03-18 14:36:01] system: Brak zadań do wysłania
+[2026-03-18 14:37:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:37:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:37:00] Brak zadań do wysłania
+[2026-03-18 14:37:00] system: Brak zadań do wysłania
+[2026-03-18 14:38:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:38:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:38:00] Brak zadań do wysłania
+[2026-03-18 14:38:00] system: Brak zadań do wysłania
+[2026-03-18 14:39:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:39:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:39:00] Brak zadań do wysłania
+[2026-03-18 14:39:00] system: Brak zadań do wysłania
+[2026-03-18 14:40:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:40:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 14:40:01] Brak zadań do wysłania
+[2026-03-18 14:40:01] system: Brak zadań do wysłania
+[2026-03-18 19:36:40] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:36:40] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:36:40] Brak zadań do wysłania
+[2026-03-18 19:36:40] system: Brak zadań do wysłania
+[2026-03-18 19:37:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:37:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:37:01] Brak zadań do wysłania
+[2026-03-18 19:37:01] system: Brak zadań do wysłania
+[2026-03-18 19:38:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:38:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:38:01] Brak zadań do wysłania
+[2026-03-18 19:38:01] system: Brak zadań do wysłania
+[2026-03-18 19:39:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:39:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:39:00] Brak zadań do wysłania
+[2026-03-18 19:39:00] system: Brak zadań do wysłania
+[2026-03-18 19:40:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:40:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:40:00] Brak zadań do wysłania
+[2026-03-18 19:40:00] system: Brak zadań do wysłania
+[2026-03-18 19:41:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:41:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:41:00] Brak zadań do wysłania
+[2026-03-18 19:41:00] system: Brak zadań do wysłania
+[2026-03-18 19:42:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:42:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:42:00] Brak zadań do wysłania
+[2026-03-18 19:42:00] system: Brak zadań do wysłania
+[2026-03-18 19:43:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:43:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:43:01] Brak zadań do wysłania
+[2026-03-18 19:43:01] system: Brak zadań do wysłania
+[2026-03-18 19:44:01] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:44:01] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:44:01] Brak zadań do wysłania
+[2026-03-18 19:44:01] system: Brak zadań do wysłania
+[2026-03-18 19:45:02] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:45:02] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:45:02] Brak zadań do wysłania
+[2026-03-18 19:45:02] system: Brak zadań do wysłania
+[2026-03-18 19:46:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:46:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:46:00] Brak zadań do wysłania
+[2026-03-18 19:46:00] system: Brak zadań do wysłania
+[2026-03-18 19:47:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:47:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:47:00] Brak zadań do wysłania
+[2026-03-18 19:47:00] system: Brak zadań do wysłania
+[2026-03-18 19:48:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:48:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:48:00] Brak zadań do wysłania
+[2026-03-18 19:48:00] system: Brak zadań do wysłania
+[2026-03-18 19:49:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:49:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:49:00] Brak zadań do wysłania
+[2026-03-18 19:49:00] system: Brak zadań do wysłania
+[2026-03-18 19:50:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:50:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:50:00] Brak zadań do wysłania
+[2026-03-18 19:50:00] system: Brak zadań do wysłania
+[2026-03-18 19:51:00] Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:51:00] system: Przygotowano 0 zadań do wysłania (z limitem 5)
+[2026-03-18 19:51:00] Brak zadań do wysłania
+[2026-03-18 19:51:00] system: Brak zadań do wysłania
+[2026-03-18 19:51:16] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 19:51:16] system: Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 19:51:18] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 19:51:18] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:02:55] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 20:02:55] system: Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 20:02:55] Wykryto brak raportu - generowanie catch-up
+[2026-03-18 20:02:55] system: Wykryto brak raportu - generowanie catch-up
+[2026-03-18 20:02:55] Work Detection (catch-up): STAGNATION
+[2026-03-18 20:02:55] system: Work Detection (catch-up): STAGNATION
+[2026-03-18 20:02:55] ⚠️ ⚠️ **Stagnacja wykryta** w: content_bot, scraper_1, towarzysz
+
+Zrób jedną konkretną rzecz:
+→ stwórz plik
+→ zamknij task
+→ zrób commit
+[2026-03-18 20:02:55] system: ⚠️ ⚠️ **Stagnacja wykryta** w: content_bot, scraper_1, towarzysz
+
+Zrób jedną konkretną rzecz:
+→ stwórz plik
+→ zamknij task
+→ zrób commit
+[2026-03-18 20:02:55] Raport catch-up wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 20:02:55] system: Raport catch-up wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 20:07:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:07:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:23:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:23:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:38:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 20:38:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:17:02] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 21:17:02] system: Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 21:17:04] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:17:04] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:33:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:33:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:40:03] Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 21:40:03] system: Development Assistant V4 - Uruchomienie pętli głównej
+[2026-03-18 21:48:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 21:48:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 22:00:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:00:00] system: Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:00:05] Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:00:05] system: Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:00:06] Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:00:06] system: Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:00:12] Dodano task przełamania stagnacji dla content_bot
+[2026-03-18 22:00:12] system: Dodano task przełamania stagnacji dla content_bot
+[2026-03-18 22:00:15] Dodano task przełamania stagnacji dla scraper_1
+[2026-03-18 22:00:15] system: Dodano task przełamania stagnacji dla scraper_1
+[2026-03-18 22:00:17] Dodano task przełamania stagnacji dla towarzysz
+[2026-03-18 22:00:17] system: Dodano task przełamania stagnacji dla towarzysz
+[2026-03-18 22:00:17] Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:00:17] system: Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:00:17] Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:00:17] system: Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:00:17] Czekanie 42.860993 sekund do następnego sprawdzenia
+[2026-03-18 22:00:17] system: Czekanie 42.860993 sekund do następnego sprawdzenia
+[2026-03-18 22:01:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:01:00] system: Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:01:01] Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:01:01] system: Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:01:01] Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:01:01] system: Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:01:01] Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:01:01] system: Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:01:01] Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:01:01] system: Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:01:01] Czekanie 58.415978 sekund do następnego sprawdzenia
+[2026-03-18 22:01:01] system: Czekanie 58.415978 sekund do następnego sprawdzenia
+[2026-03-18 22:02:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:02:00] system: Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:02:01] Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:02:01] system: Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:02:01] Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:02:01] system: Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:02:01] Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:02:01] system: Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:02:01] Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:02:01] system: Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:02:01] Czekanie 58.380542 sekund do następnego sprawdzenia
+[2026-03-18 22:02:01] system: Czekanie 58.380542 sekund do następnego sprawdzenia
+[2026-03-18 22:03:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:03:00] system: Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:03:01] Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:03:01] system: Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:03:01] Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:03:01] system: Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:03:01] Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:03:01] system: Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:03:01] Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:03:01] system: Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:03:01] Czekanie 58.260199 sekund do następnego sprawdzenia
+[2026-03-18 22:03:01] system: Czekanie 58.260199 sekund do następnego sprawdzenia
+[2026-03-18 22:04:00] Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:04:00] system: Rozpoczęcie wieczornego cyklu dziennego
+[2026-03-18 22:04:01] Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:04:01] system: Wysłano 0 zadań na jutro do Todoist
+[2026-03-18 22:04:01] Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:04:01] system: Work Detection: STAGNATION (score: -9)
+[2026-03-18 22:04:01] Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:04:01] system: Lekcja dnia zapisana: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/lessons/2026-03-18_lekcja.md
+[2026-03-18 22:04:01] Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:04:01] system: Raport dzienny wygenerowany: /home/felanraf/Dokumenty/Obsidian Vault/DevelopmentAssistant/Daily/2026-03-18.md
+[2026-03-18 22:04:01] Czekanie 58.712063 sekund do następnego sprawdzenia
+[2026-03-18 22:04:01] system: Czekanie 58.712063 sekund do następnego sprawdzenia
+[2026-03-18 22:05:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 22:05:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 22:21:00] Todoist: 0 aktywnych, 0 ukończonych dziś
+[2026-03-18 22:21:00] system: Todoist: 0 aktywnych, 0 ukończonych dziś

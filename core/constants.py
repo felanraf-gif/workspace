@@ -1,0 +1,40 @@
+"""
+core/constants.py - Wspólne stałe systemu
+Jedno miejsce definiowania ikon, limitów i konfiguracji
+"""
+
+STATUS_ICONS = {
+    "REAL_WORK": "🟢",
+    "LOW_PROGRESS": "🟡",
+    "STAGNATION": "🔴",
+    "UNKNOWN": "⚪"
+}
+
+PRIORITY_ICONS = {
+    "HIGH": "🔴",
+    "MEDIUM": "🟡",
+    "LOW": "🟢"
+}
+
+PRIORITY_ORDER = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
+
+PRIORITY_TODOIST = {"HIGH": 4, "MEDIUM": 3, "LOW": 2}
+
+STAGNATION_THRESHOLD_DAYS = 3
+STAGNATION_CRITICAL_DAYS = 5
+STAGNATION_WARNING_DAYS = 3
+
+CHECKIN_INTERVAL_MINUTES = 30
+OVERDUE_DAYS = 3
+
+COMPLETION_WARNING_THRESHOLD = 2
+COMPLETION_CRITICAL_THRESHOLD = 4
+
+MAX_TASKS_PER_PROJECT = 5
+MAX_TASKS_PER_DAY = 5
+MAX_DAILY_TASKS = 5
+
+FOCUS_LABEL = "FOCUS"
+TODOIST_LABELS = ["development", "assistant"]
+
+SCAN_INTERVAL_SECONDS = 300

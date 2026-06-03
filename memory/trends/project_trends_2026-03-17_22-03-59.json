@@ -1,0 +1,56 @@
+{
+  "content_bot": {
+    "history": [
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      }
+    ],
+    "current_trend": 0.0,
+    "volatility": 0.0
+  },
+  "scraper_1": {
+    "history": [
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      }
+    ],
+    "current_trend": 0.0,
+    "volatility": 0.0
+  },
+  "towarzysz": {
+    "history": [
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      },
+      {
+        "date": "2026-03-17",
+        "value": 0.6
+      }
+    ],
+    "current_trend": 0.0,
+    "volatility": 0.0
+  }
+}

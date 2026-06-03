@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-03-17_21-42-51",
+  "projects_count": 3,
+  "issues_count": 6,
+  "projects": [
+    {
+      "name": "content_bot",
+      "path": "workspace/projects/content_bot",
+      "files": [
+        {
+          "name": "config.json",
+          "path": "config.json",
+          "full_path": "workspace/projects/content_bot/config.json",
+          "hash": "43cd5c2a3cc2ed629745333f5a6ddab5"
+        }
+      ],
+      "new_files": [
+        "config.json"
+      ],
+      "changed_files": []
+    },
+    {
+      "name": "scraper_1",
+      "path": "workspace/projects/scraper_1",
+      "files": [
+        {
+          "name": "config.json",
+          "path": "config.json",
+          "full_path": "workspace/projects/scraper_1/config.json",
+          "hash": "1d74863de14351886f6572a36f7f5158"
+        }
+      ],
+      "new_files": [
+        "config.json"
+      ],
+      "changed_files": []
+    },
+    {
+      "name": "towarzysz",
+      "path": "workspace/projects/towarzysz",
+      "files": [
+        {
+          "name": "config.json",
+          "path": "config.json",
+          "full_path": "workspace/projects/towarzysz/config.json",
+          "hash": "6bc45727f3ce6d1411df19d8825d17d0"
+        }
+      ],
+      "new_files": [
+        "config.json"
+      ],
+      "changed_files": []
+    }
+  ],
+  "issues": [
+    {
+      "project": "content_bot",
+      "issue": "Brak katalogu src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "content_bot",
+      "issue": "Nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    },
+    {
+      "project": "scraper_1",
+      "issue": "Brak katalogu src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "scraper_1",
+      "issue": "Nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    },
+    {
+      "project": "towarzysz",
+      "issue": "Brak katalogu src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "towarzysz",
+      "issue": "Nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    }
+  ]
+}

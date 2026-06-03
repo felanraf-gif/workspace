@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-03-17_21-53-00",
+  "status": {
+    "content_bot": {
+      "last_modified": "2026-03-17T21:23:09.583933",
+      "hours_since_change": 0.5,
+      "active": true
+    },
+    "scraper_1": {
+      "last_modified": "2026-03-17T21:23:09.086936",
+      "hours_since_change": 0.5,
+      "active": true
+    },
+    "towarzysz": {
+      "last_modified": "2026-03-17T21:23:08.541940",
+      "hours_since_change": 0.5,
+      "active": true
+    }
+  },
+  "stagnation_report": []
+}

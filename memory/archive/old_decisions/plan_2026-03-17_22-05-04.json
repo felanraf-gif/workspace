@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-03-17_22-05-04",
+  "tasks_count": 3,
+  "tasks": [
+    {
+      "project": "content_bot",
+      "task": "Przegl\u0105daj i aktualizuj kod",
+      "priority": "MEDIUM",
+      "type": "development",
+      "value_score": 0.6,
+      "trend_score": 0.6
+    },
+    {
+      "project": "scraper_1",
+      "task": "Przegl\u0105daj i aktualizuj kod",
+      "priority": "MEDIUM",
+      "type": "development",
+      "value_score": 0.6,
+      "trend_score": 0.6
+    },
+    {
+      "project": "towarzysz",
+      "task": "Przegl\u0105daj i aktualizuj kod",
+      "priority": "MEDIUM",
+      "type": "development",
+      "value_score": 0.6,
+      "trend_score": 0.6
+    }
+  ],
+  "todoist_sent": [
+    {
+      "todoist_id": "6g9q2f3g6f2vWFxJ",
+      "task_data": {
+        "project": "content_bot",
+        "task": "Przegl\u0105daj i aktualizuj kod",
+        "priority": "MEDIUM",
+        "type": "development",
+        "value_score": 0.6,
+        "trend_score": 0.6
+      }
+    },
+    {
+      "todoist_id": "6g9q2f8HxX7m7pmJ",
+      "task_data": {
+        "project": "scraper_1",
+        "task": "Przegl\u0105daj i aktualizuj kod",
+        "priority": "MEDIUM",
+        "type": "development",
+        "value_score": 0.6,
+        "trend_score": 0.6
+      }
+    },
+    {
+      "todoist_id": "6g9q2fCcFRFHhfHJ",
+      "task_data": {
+        "project": "towarzysz",
+        "task": "Przegl\u0105daj i aktualizuj kod",
+        "priority": "MEDIUM",
+        "type": "development",
+        "value_score": 0.6,
+        "trend_score": 0.6
+      }
+    }
+  ]
+}

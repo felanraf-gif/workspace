@@ -1,0 +1,26 @@
+[
+  {
+    "project": "content_bot",
+    "task": "Przegl\u0105daj i aktualizuj kod",
+    "priority": "MEDIUM",
+    "type": "development",
+    "value_score": 0.6,
+    "trend_score": 0.6
+  },
+  {
+    "project": "scraper_1",
+    "task": "Przegl\u0105daj i aktualizuj kod",
+    "priority": "MEDIUM",
+    "type": "development",
+    "value_score": 0.6,
+    "trend_score": 0.6
+  },
+  {
+    "project": "towarzysz",
+    "task": "Przegl\u0105daj i aktualizuj kod",
+    "priority": "MEDIUM",
+    "type": "development",
+    "value_score": 0.6,
+    "trend_score": 0.6
+  }
+]

@@ -1,0 +1,368 @@
+{
+  "content_bot": [
+    {
+      "timestamp": "2026-03-17T21:58:01.612673",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:03:59.846082",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:05:04.107513",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:06:07.518170",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:25:40.514365",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:26:42.246429",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:27:44.260386",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:28:46.033199",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:29:47.874659",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:30:49.754055",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:31:51.837967",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T08:23:03.935265",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    }
+  ],
+  "scraper_1": [
+    {
+      "timestamp": "2026-03-17T21:58:01.612673",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:03:59.846082",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:05:04.107513",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:06:07.518170",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:25:40.514365",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:26:42.246429",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:27:44.260386",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:28:46.033199",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:29:47.874659",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:30:49.754055",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:31:51.837967",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T08:23:03.935265",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    }
+  ],
+  "towarzysz": [
+    {
+      "timestamp": "2026-03-17T21:58:01.612673",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:03:59.846082",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:05:04.107513",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-17T22:06:07.518170",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:25:40.514365",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:26:42.246429",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:27:44.260386",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:28:46.033199",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:29:47.874659",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:30:49.754055",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T07:31:51.837967",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T08:23:03.935265",
+      "avg_value": 0.6,
+      "task_count": 1,
+      "priority_distribution": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 0
+      }
+    }
+  ]
+}

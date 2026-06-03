@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-03-17_21-42-52",
+  "tasks_count": 6,
+  "tasks": [
+    {
+      "project": "content_bot",
+      "task": "Utw\u00f3rz katalog src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "scraper_1",
+      "task": "Utw\u00f3rz katalog src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "towarzysz",
+      "task": "Utw\u00f3rz katalog src/",
+      "priority": "HIGH",
+      "type": "structure"
+    },
+    {
+      "project": "content_bot",
+      "task": "Przejrze\u0107 nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    },
+    {
+      "project": "scraper_1",
+      "task": "Przejrze\u0107 nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    },
+    {
+      "project": "towarzysz",
+      "task": "Przejrze\u0107 nowy plik: config.json",
+      "priority": "MEDIUM",
+      "type": "new_file"
+    }
+  ],
+  "todoist_sent": []
+}

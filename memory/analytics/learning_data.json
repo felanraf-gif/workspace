@@ -1,0 +1,1205 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-03-19T17:17:34.523180",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T17:17:34.523767",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T17:17:34.524948",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T18:45:07.822655",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T18:45:07.823097",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T18:45:07.823430",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T19:59:19.636305",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T19:59:19.636920",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T19:59:19.638170",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:00:20.577047",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:00:20.577594",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:00:20.579373",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:01:18.169337",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:01:18.169845",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:01:18.174193",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:02:37.784473",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:02:37.785124",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:02:37.787105",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:22:03.738658",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:22:03.739040",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:22:03.739764",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:25:01.180313",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:25:01.180685",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:25:01.181147",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:30:08.452101",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:30:08.452423",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:30:08.453494",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:35:10.542873",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:35:10.543098",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:35:10.545820",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:40:13.861884",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:40:13.862800",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:40:13.863212",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:45:16.197651",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:45:16.198020",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:45:16.198532",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:46:00.021303",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:46:00.024048",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:46:00.028571",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:49:35.189542",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:49:35.190665",
+      "type": "stagnation",
+      "project": "empty_test",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:49:35.191284",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:49:35.192526",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:49:35.196109",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:54:37.656136",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:54:37.657811",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:54:37.658598",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:54:37.659811",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:59:40.974084",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:59:40.976341",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:59:40.977314",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T20:59:40.978815",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:02:55.297047",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:02:55.297558",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:02:55.298075",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:02:55.298744",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:03:37.510283",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:03:37.511026",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:03:37.511473",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:03:37.512184",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:01.646015",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:01.647075",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:01.648704",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:01.649670",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:16.493421",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:16.494974",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:16.495767",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:04:16.496878",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:09:19.450166",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:09:19.457796",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:09:19.461109",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:09:19.463955",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:14:24.579725",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:14:24.580812",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:14:24.581397",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:14:24.582104",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:19:27.755223",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:19:27.755937",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:19:27.756945",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:19:27.757679",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:24:30.816772",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:24:30.818662",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:24:30.820109",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:24:30.821624",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:29:33.255812",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:29:33.257098",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:29:33.259121",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:29:33.262425",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:34:36.233882",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:34:36.234519",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:34:36.235522",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:34:36.236561",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:39:41.192012",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:39:41.199922",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:39:41.204286",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:39:41.205193",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:44:44.216241",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:44:44.220229",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:44:44.222238",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:44:44.224608",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:49:47.585196",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:49:47.586817",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:49:47.591902",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:49:47.593121",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:54:50.174671",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:54:50.175845",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:54:50.177166",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:54:50.179057",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:59:52.970708",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:59:52.971557",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:59:52.972598",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T21:59:52.973749",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:04:55.938007",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:04:55.940100",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:04:55.941063",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:04:55.942214",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:09:58.301144",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:09:58.303073",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:09:58.305745",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:09:58.306729",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:15:00.934333",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:15:00.935739",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:15:00.936971",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:15:00.938025",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:20:06.745767",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:20:06.747899",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:20:06.749800",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:20:06.751369",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:25:11.817744",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:25:11.819375",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:25:11.821266",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:25:11.823067",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:30:14.518782",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:30:14.519905",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:30:14.520735",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:30:14.522145",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:35:17.356168",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:35:17.358140",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:35:17.359972",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:35:17.361851",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:40:20.157261",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:40:20.158137",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:40:20.159151",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:40:20.160177",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:45:23.595196",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:45:23.648668",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:45:23.651158",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:45:23.654729",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:50:26.337476",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:50:26.338563",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:50:26.339493",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:50:26.340467",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:55:29.018173",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:55:29.019093",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:55:29.020953",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T22:55:29.036637",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:00:31.470071",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:00:31.471002",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:00:31.472042",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:00:31.473466",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:05:34.739062",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:05:34.740258",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:05:34.741487",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:05:34.746597",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:10:37.452477",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:10:37.453657",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:10:37.458649",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:10:37.459670",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:15:40.095869",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:15:40.104532",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:15:40.105536",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:15:40.112181",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:20:43.367696",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:20:43.377055",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:20:43.379913",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-19T23:20:43.385751",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:02:37.644981",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:02:37.653572",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:02:37.655870",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:02:37.657254",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:08.810987",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:08.812849",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:08.814754",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:08.816320",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:20.497761",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:20.500918",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:20.502939",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:03:20.505060",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:08:25.543226",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:08:25.554269",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:08:25.570852",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:08:25.584131",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:13:30.053514",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:13:30.055781",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:13:30.056983",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:13:30.058053",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:18:33.517971",
+      "type": "stagnation",
+      "project": "content_bot",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:18:33.526016",
+      "type": "stagnation",
+      "project": "scraper_1",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:18:33.527757",
+      "type": "stagnation",
+      "project": "test_project",
+      "days": 3
+    },
+    {
+      "timestamp": "2026-03-20T05:18:33.529186",
+      "type": "stagnation",
+      "project": "towarzysz",
+      "days": 3
+    }
+  ],
+  "stats": {}
+}

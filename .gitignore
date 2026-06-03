@@ -1,0 +1,55 @@
+# Środowiska wirtualne
+venv/
+tor_env/
+.env
+envs/
+
+# Cache Pythona
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.mypy_cache/
+.pytype/
+
+# Systemowe pliki
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logi
+*.log
+daemon.log
+
+# Pliki runtime i stanu
+memory/*.json
+!memory/.gitkeep
+system/*.json
+!system/.gitkeep
+
+# Pliki IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Node (jeśli używany)
+node_modules/
+package-lock.json
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.whl
+
+# Vaulty zewnętrzne
+Obsidian/
+Vault/
+
+# Pliki backup
+*.bak
+*.backup
