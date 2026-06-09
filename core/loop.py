@@ -26,6 +26,7 @@ from brain.analyzer import Analyzer
 from brain.planner import Planner
 from brain.assistant import Assistant
 from brain.alerts import Alerts
+from brain.code_graph import DependencyGraph
 from integrations.obsidian import Obsidian
 from integrations.todoist import Todoist
 from integrations.standup import Standup
@@ -325,6 +326,18 @@ def main_loop():
                 for issue in issues:
                     if issue.get("priority") in ["HIGH", "MEDIUM"]:
                         safe_print(f"    [{issue['priority']}] {issue['issue'][:70]}")
+
+                dep_issues = [i for i in issues if i.get("type") == "dependency"]
+                if dep_issues:
+                    dead = [i for i in dep_issues if "Martwy kod" in i.get("issue", "")]
+                    cycles = [i for i in dep_issues if "Cykliczna" in i.get("issue", "")]
+                    high = [i for i in dep_issues if "Wysoki wpływ" in i.get("issue", "")]
+                    if dead:
+                        safe_print(f"  [GRAPH] Martwy kod: {len(dead)} plików")
+                    if cycles:
+                        safe_print(f"  [GRAPH] Cykle: {len(cycles)}")
+                    if high:
+                        safe_print(f"  [GRAPH] Wysoki wpływ: {len(high)} modułów")
             else:
                 issues = []
                 summary = ""

@@ -11,6 +11,7 @@ import hashlib
 import requests
 from datetime import datetime, timedelta
 from core.config import PROJECTS_PATH, MEMORY_PATH, TODOIST_API_TOKEN, INTEGRATE_TODOIST, STAGNATION_DAYS
+from brain.code_graph import DependencyGraph
 
 
 class Analyzer:
@@ -280,7 +281,40 @@ class Analyzer:
                 "priority": "MEDIUM",
                 "type": "structure"
             })
-        
+
+        if python_files:
+            dg = DependencyGraph()
+            dg_result = dg.build(project)
+
+            for dead in dg_result["dead_code"]:
+                issues.append({
+                    "project": project_name,
+                    "issue": f"Martwy kod: {dead['file']} — {dead['reason']}",
+                    "priority": "MEDIUM",
+                    "type": "dependency",
+                    "file": dead["file"]
+                })
+
+            for cycle in dg_result["cycles"]:
+                path = " → ".join(cycle)
+                issues.append({
+                    "project": project_name,
+                    "issue": f"Cykliczna zależność: {path}",
+                    "priority": "HIGH",
+                    "type": "dependency",
+                    "cycle": cycle
+                })
+
+            for hi in dg_result["high_impact"][:3]:
+                issues.append({
+                    "project": project_name,
+                    "issue": f"Wysoki wpływ: {hi['file']} — używany w {hi['dependant_count']} plikach",
+                    "priority": "INFO",
+                    "type": "dependency",
+                    "file": hi["file"],
+                    "dependant_count": hi["dependant_count"]
+                })
+
         return issues
     
     def _analyze_python_file(self, file_info, project_name):
@@ -1049,7 +1083,12 @@ class Analyzer:
         is_new = self.is_new_project(project)
         
         issues = self._analyze_project_deep(project)
-        
+
+        dependency_graph = None
+        if any(f["name"].endswith(".py") for f in project.get("files", [])):
+            dg = DependencyGraph()
+            dependency_graph = dg.summary(project)
+
         return {
             "project": project["name"],
             "is_new": is_new,
@@ -1058,6 +1097,7 @@ class Analyzer:
             "roadmap": roadmap,
             "focus_task": roadmap.get("focus_task"),
             "issues": issues,
+            "dependency_graph": dependency_graph,
             "summary": self._generate_summary(project, structure, architecture, roadmap, issues)
         }
     
