@@ -79,7 +79,7 @@ class BashTools:
         python = python_path or sys.executable
         cmd_args = [python]
         
-        if os.path.exists(script) if 'script' in dir() else False:
+        if os.path.isfile(script):
             cmd_args.append(script)
         else:
             cmd_args.extend(["-c", script])
