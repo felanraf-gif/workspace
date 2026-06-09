@@ -4,6 +4,7 @@ Wykonuje zadania z planu Architecta
 """
 
 from datetime import datetime
+from brain.patch_engine import Patch
 
 
 class Builder:
@@ -81,6 +82,20 @@ class Builder:
                 elif action == "refactor":
                     result["success"] = True
                     result["output"] = "Refactoring scheduled"
+                elif action == "patch":
+                    from brain.patch_engine import PatchEngine
+                    engine = PatchEngine()
+                    patch = Patch(
+                        issue_type=task.get("issue_type", "code_quality"),
+                        file=target,
+                        description=task.get("description", ""),
+                        old_code=task.get("old_code"),
+                        new_code=task.get("new_code"),
+                        confidence=task.get("confidence", 0.9),
+                    )
+                    ok = engine.apply_patch(patch)
+                    result["success"] = ok
+                    result["output"] = f"Patch applied: {patch.description}" if ok else "Patch failed"
                 elif action == "execute":
                     output = executor.execute_tool("bash_run", {"command": target})
                     result["success"] = output.get("success", False)

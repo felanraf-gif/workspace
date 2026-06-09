@@ -27,6 +27,7 @@ from brain.planner import Planner
 from brain.assistant import Assistant
 from brain.alerts import Alerts
 from brain.code_graph import DependencyGraph
+from brain.patch_engine import PatchEngine
 from integrations.obsidian import Obsidian
 from integrations.todoist import Todoist
 from integrations.standup import Standup
@@ -342,6 +343,33 @@ def main_loop():
                 issues = []
                 summary = ""
             
+            # ═══════════════════════════════════════════════════════
+            # FAZA 1c: PATCH ENGINE - Auto-poprawki
+            # ═══════════════════════════════════════════════════════
+            if agent_intel and issues:
+                patch_engine = PatchEngine()
+                agent_project = agent_intel.get("structure", {}).copy()
+                agent_project["name"] = "towarzysz"
+                agent_project["path"] = os.path.dirname(os.path.dirname(__file__))
+
+                patches = patch_engine.suggest(issues, agent_project)
+                if patches:
+                    high = [p for p in patches if p.confidence >= PatchEngine.AUTO_CONFIDENCE]
+                    low = [p for p in patches if p.confidence < PatchEngine.AUTO_CONFIDENCE]
+
+                    if high:
+                        safe_print(f"[PATCH] Auto-aplikuję {len(high)} poprawek (confidence >= {PatchEngine.AUTO_CONFIDENCE})")
+                        for p in high:
+                            safe_print(f"  → {p.description}")
+                        applied = patch_engine.apply_patches(high)
+                        safe_print(f"[PATCH] Aplikowano {len(applied)}/{len(high)} poprawek")
+                        if applied:
+                            safe_print(f"[PATCH] Zmiany commitowane do gita")
+
+                    if low:
+                        safe_print(f"[PATCH] {len(low)} poprawek wymaga potwierdzenia:")
+                        safe_print(patch_engine.preview(low))
+
             # Daily Standup o 6:00
             if INTEGRATE_OBSIDIAN and standup.should_run() and not standup.was_run_today():
                 tasks = planner.create_tomorrow_plan_from_intelligence(agent_intel) if agent_intel else []
