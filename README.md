@@ -1,6 +1,10 @@
 # Towarzysz V9
 
-Autonomiczny agent-asystent dewelopersky z architekturą wieloagentową. Monitoruje projekty, analizuje kod, planuje zadania, synchronizuje z Todoist i zapisuje do Obsidian.
+Towarzysz analizuje projekty i przygotowuje rekomendacje. Domyślnie działa w Observer Mode. Moduły integracji istnieją, lecz ich trwałe skutki są blokowane przez bieżącą politykę.
+
+Aktualny wynik: **96 PASS, 1 pominięty**. Szczegóły: [STATUS_AKTUALNY.md](STATUS_AKTUALNY.md).
+
+Instalacja zależności testowych: `python3 -m pip install -r requirements-dev.txt` w wybranym środowisku wirtualnym.
 
 ## Architektura
 
@@ -65,9 +69,10 @@ towarzysz/
 │   └── selector.py          # Selekcja skilli
 ├── cli/commands.py          # Komendy interaktywne
 ├── reports/reporter.py      # Raporty dzienne
-├── tests/                   # 18 testów
+├── tests/                   # Testy regresyjne
 ├── main.py                  # Punkt wejścia
-└── requirements.txt         # Zależności
+├── requirements.txt         # Zależności uruchomieniowe
+└── requirements-dev.txt     # Zależności testowe
 ```
 
 ## Funkcje
@@ -87,13 +92,13 @@ towarzysz/
 ### Pamięć trójpoziomowa (V9)
 - **ShortMemory** — in-memory z TTL (cache kontekstu)
 - **LongMemory** — trwała w plikach JSON
-- **VectorMemory** — wyszukiwanie semantyczne
+- **VectorMemory** — proste wyszukiwanie leksykalne w trwałym magazynie JSON
 
 ### System narzędzi (V9)
 - File: odczyt/zapis/edycja plików
-- Bash: uruchamianie poleceń i skryptów
+- Bash: interfejs istnieje, wykonanie jest blokowane
 - Search: grep i find po projekcie
-- Git: operacje git
+- Git: kontrolowane odczyty; add/commit są blokowane
 
 ### Produktywność
 - Alerty stagnacji (CRITICAL / WARNING / INFO)
@@ -109,7 +114,7 @@ cp .env.example .env
 # Edytuj .env — dodaj klucze API
 ```
 
-Zmienne wymagane:
+Zmienne opcjonalnych integracji (niewymagane w Observer Mode):
 ```env
 TODOIST_API_TOKEN=your_todoist_token
 GROQ_API_KEY=your_groq_key
@@ -118,8 +123,8 @@ GROQ_API_KEY=your_groq_key
 ## Uruchomienie
 
 ```bash
-./run_da.sh                    # Jako daemon w tle
-tor_env/bin/python main.py      # Bezpośrednio
+./run_da.sh                     # Jako daemon w tle
+.venv/bin/python -B main.py     # Bezpośrednio
 ```
 
 ## CLI
@@ -136,7 +141,7 @@ tor_env/bin/python main.py      # Bezpośrednio
 ## Testowanie
 
 ```bash
-tor_env/bin/python -m pytest tests/ -v    # 18 testów
+PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -B scripts/validate.py
 ```
 
 ## Integracje
@@ -149,9 +154,16 @@ tor_env/bin/python -m pytest tests/ -v    # 18 testów
 
 ## Bezpieczeństwo
 
-- Secrets maskowane w output (`<Token>`)
-- Tokeny w `.env` — nie w git
-- `.gitignore` chroni `.env`, logi, cache
+- Domyślny start działa w `OBSERVER_MODE=true` i blokuje trwałe skutki.
+- `AUTHORIZED_REPO` jest przejmowane wyłącznie ze środowiska procesu przed
+  załadowaniem `.env`; brak poprawnej wartości oznacza brak zapisów.
+- Kontrolowane zapisy są ograniczone do autoryzowanego repozytorium; blokowane
+  są m.in. wyjścia przez `..`, symlinki, hardlinki, zagnieżdżone repozytoria i `.git`.
+- Odczyty Git wyłączają hooki, filtry, zewnętrzne diffy, rekursję submodułów i
+  formaty uruchamiające weryfikatory podpisów.
+- PatchEngine nie wykonuje stagingu ani commitów.
+- Jest to polityka aplikacyjna, nie sandbox systemu operacyjnego. R3/R4 i pełny
+  przepływ jednorazowej zgody pozostają dalszym etapem hardeningu.
 
 ## Wersje
 
@@ -159,3 +171,7 @@ tor_env/bin/python -m pytest tests/ -v    # 18 testów
 - **V8** — Refaktoryzacja, bezpieczeństwo, szczegółowe taski
 - **V7** — Smart check-in, Project Intelligence
 - **V4-V6** — Archiwum w `modules_archive/`
+
+## Ograniczenia
+
+Tylko jawne `OBSERVER_MODE=false` wyłącza obserwację; inne wartości pozostawiają blokadę. `auto_confirm=False` odmawia zastosowania patchy, lecz nie stanowi pełnego mechanizmu zgód. Ignorowanie submodułów ogranicza kompletność metryk Git. `run_da.sh` zapisuje log i PID niezależnie od polityki aplikacji. Do analizy bez tego launchera użyj `OBSERVER_MODE=true .venv/bin/python -B main.py --once`.

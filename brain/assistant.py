@@ -3,12 +3,12 @@ brain/assistant.py - Asystent: interakcja, nauka i sugestie
 Konsolidacja: learning_engine + interaction_engine + executor_lite
 """
 
-import os
+from core.observer_storage import os, open
 import sys
 import json
 from datetime import datetime, timedelta
 from collections import defaultdict
-from core.constants import PRIORITY_ICONS, CHECKIN_INTERVAL_MINUTES
+from core.constants import PRIORITY_ICONS
 
 
 def safe_print(*args, **kwargs):
@@ -45,7 +45,7 @@ class Assistant:
         self.llm = None
         if use_llm:
             try:
-                from integrations.llm import SmartAdvisor, LLM
+                from integrations.llm import SmartAdvisor
                 self.llm = SmartAdvisor()
                 if self.llm.llm.is_available():
                     print(f"[ASSISTANT] 🤖 LLM aktywny ({self.llm.llm.provider})")

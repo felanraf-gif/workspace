@@ -1,3 +1,5 @@
+> Dokument historyczny. Aktualny stan i granice walidacji: `STATUS_AKTUALNY.md` w katalogu głównym.
+
 # Development Assistant V4 - Workflow Dzienny
 
 ## Przegląd
@@ -132,7 +134,7 @@ Zawiera:
 ### core/config.py
 ```python
 SCAN_INTERVAL = 60  # sekundy
-TODOIST_API_TOKEN = "981bf199808938a05f81776999fb58de655fe9cc"
+TODOIST_API_TOKEN = "REDACTED_TODOIST_TOKEN"
 OBSIDIAN_PATH = "Obsidian/DevelopmentAssistant/"
 ENABLE_ANALYTICS = True
 ENABLE_TRENDS = True

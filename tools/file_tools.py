@@ -1,3 +1,4 @@
+from core.observer_policy import mutation, assert_write_path, scoped_open
 """
 tools/file_tools.py - File Tools
 Operacje na plikach - read, write, edit
@@ -49,6 +50,7 @@ class FileTools:
         
         return result
     
+    @mutation("tools/file_tools.py:write", controlled=True, paths=lambda v: [v["path"]])
     def write(self, path, content, encoding='utf-8', backup=True):
         """
         Zapisuje plik.
@@ -68,15 +70,19 @@ class FileTools:
             "error": None
         }
         
+        path = assert_write_path(path)
         if backup and os.path.exists(path):
             backup_path = f"{path}.backup.{datetime.now().strftime('%Y%m%d%H%M%S')}"
-            shutil.copy2(path, backup_path)
+            try:
+                with open(path, "rb") as source, scoped_open(backup_path, "xb") as dest:
+                    shutil.copyfileobj(source, dest)
+            except OSError as exc:
+                result["error"] = str(exc)
+                return result
             result["backup"] = backup_path
         
         try:
-            os.makedirs(os.path.dirname(path) if os.path.dirname(path) else '.', exist_ok=True)
-            
-            with open(path, 'w', encoding=encoding) as f:
+            with scoped_open(path, 'w', encoding=encoding) as f:
                 f.write(content)
             
             result["success"] = True
@@ -87,6 +93,7 @@ class FileTools:
         
         return result
     
+    @mutation("tools/file_tools.py:edit", controlled=True, paths=lambda v: [v["path"]])
     def edit(self, path, old_string, new_string, backup=True):
         """
         Edytuje plik - zamienia old_string na new_string.
@@ -119,6 +126,9 @@ class FileTools:
         
         backup_result = self.write(f"{path}.edit.backup", content) if backup else None
         
+        if backup and not backup_result.get("success"):
+            return backup_result
+
         new_content = content.replace(old_string, new_string)
         
         write_result = self.write(path, new_content, backup=False)

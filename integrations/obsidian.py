@@ -2,7 +2,8 @@
 integrations/obsidian.py - Integracja z Obsidian
 """
 
-import os
+from core.observer_storage import os, open
+from core.observer_policy import mutation
 from datetime import datetime
 from core.constants import STATUS_ICONS, PRIORITY_ICONS
 
@@ -20,6 +21,7 @@ class Obsidian:
         os.makedirs(self.projects_dir, exist_ok=True)
         os.makedirs(self.interactions_dir, exist_ok=True)
 
+    @mutation("integrations/obsidian.py:save_daily_note")
     def save_daily_note(self, focus_task, message, work_status, projects, tasks, summary=None, agent_intel=None):
         """Zapisuje notatkę dzienną z szczegółowymi informacjami."""
         today = datetime.now().strftime("%Y-%m-%d")
@@ -129,6 +131,7 @@ class Obsidian:
         
         return content
 
+    @mutation("integrations/obsidian.py:save_focus_task")
     def save_focus_task(self, focus_task):
         """Zapisuje aktualny focus task."""
         today = datetime.now().strftime("%Y-%m-%d")
@@ -151,6 +154,7 @@ class Obsidian:
         except:
             pass
 
+    @mutation("integrations/obsidian.py:log_interaction")
     def log_interaction(self, action, task, message):
         """Zapisuje interakcję."""
         today = datetime.now().strftime("%Y-%m-%d")
@@ -168,6 +172,7 @@ class Obsidian:
         except:
             pass
 
+    @mutation("integrations/obsidian.py:create_project_note")
     def create_project_note(self, project_name, data):
         """Tworzy notatkę projektu."""
         filename = os.path.join(self.projects_dir, f"{project_name}.md")
@@ -208,6 +213,7 @@ class Obsidian:
 {message}
 """
 
+    @mutation("integrations/obsidian.py:save_project_intelligence")
     def save_project_intelligence(self, intelligence):
         """Zapisuje pełną analizę projektu (Project Intelligence)."""
         project_name = intelligence.get("project", "unknown")
@@ -302,6 +308,7 @@ class Obsidian:
         filepath = os.path.join(self.projects_dir, f"{project_name}_intelligence.md")
         return os.path.exists(filepath)
     
+    @mutation("integrations/obsidian.py:update_project_changes")
     def update_project_changes(self, project_name, changes):
         """Aktualizuje Project Intelligence o nowe zmiany."""
         filepath = os.path.join(self.projects_dir, f"{project_name}_intelligence.md")
@@ -344,6 +351,7 @@ class Obsidian:
         except:
             return None
 
+    @mutation("integrations/obsidian.py:save_agent_documentation")
     def save_agent_documentation(self):
         """Zapisuje dokumentację wszystkich modułów agenta."""
         filename = os.path.join(self.projects_dir, "towarzysz_dokumentacja.md")
@@ -600,6 +608,7 @@ class Obsidian:
             print(f"[OBSIDIAN] Błąd zapisu dokumentacji: {e}")
             return None
     
+    @mutation("integrations/obsidian.py:save_project_note")
     def save_project_note(self, project_name, progress, recommendations):
         """Zapisuje notatkę per-projekt do Obsidian."""
         today = datetime.now().strftime("%Y-%m-%d")
@@ -661,6 +670,7 @@ class Obsidian:
             print(f"[OBSIDIAN] Błąd zapisu notatki projektu {project_name}: {e}")
             return None
     
+    @mutation("integrations/obsidian.py:save_multi_project_dashboard")
     def save_multi_project_dashboard(self, projects_summary):
         """Zapisuje dashboard wielu projektów."""
         today = datetime.now().strftime("%Y-%m-%d")

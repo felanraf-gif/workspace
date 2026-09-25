@@ -1,9 +1,14 @@
-# Konfiguracja systemu Development Assistant V8
+# Konfiguracja systemu Towarzysz V9
 
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Observer analysis must not create import caches in scanned repositories.
+if os.getenv("OBSERVER_MODE", "false").strip().lower() == "true":
+    import sys
+    sys.dont_write_bytecode = True
 
 # Interwał skanowania w sekundach
 SCAN_INTERVAL = int(os.getenv("SCAN_INTERVAL", "60"))

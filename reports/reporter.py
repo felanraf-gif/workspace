@@ -2,7 +2,8 @@
 reports/reporter.py - Generowanie raportów
 """
 
-import os
+from core.observer_storage import os, open
+from core.observer_policy import mutation
 from datetime import datetime
 
 
@@ -15,6 +16,7 @@ class Reporter:
         self.daily_dir = os.path.join(self.obsidian_path, "Daily")
         os.makedirs(self.daily_dir, exist_ok=True)
 
+    @mutation("reports/reporter.py:generate_daily_report")
     def generate_daily_report(self, focus_task, tasks, work_data, projects):
         """Generuje raport dzienny."""
         today = datetime.now().strftime("%Y-%m-%d")

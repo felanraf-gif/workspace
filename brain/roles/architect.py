@@ -9,6 +9,8 @@ from core.constants import PRIORITY_ORDER
 
 class Architect:
     """Architect - planuje rozwiązania."""
+
+    ACTIONABLE_ISSUE_TYPES = {"security", "structure", "code_quality", "dependency"}
     
     def __init__(self):
         self.planning_history = []
@@ -75,6 +77,59 @@ class Architect:
                         "priority": issue["priority"]
                     })
         
+        # Findings z głębokiej analizy przekazujemy Builderowi
+        # jako jawne zadania naprawcze.
+        agent_intel = (context or {}).get("agent_intel") or {}
+        deep_issues = agent_intel.get("issues", [])
+        project = (context or {}).get("project") or {}
+        project_root = project.get("path")
+
+        repair_tasks = []
+
+        for issue in deep_issues:
+            issue_type = issue.get("type", "")
+            priority = issue.get("priority", "LOW")
+
+            if priority not in ("HIGH", "MEDIUM"):
+                continue
+
+            if issue_type not in self.ACTIONABLE_ISSUE_TYPES:
+                continue
+
+            # Dependency jest automatycznie naprawialne wyłącznie
+            # dla jawnie wykrytych nieużywanych importów.
+            if issue_type == "dependency":
+                suggestions = issue.get("suggestions") or []
+                if not any(
+                    s.get("type") == "unused_import"
+                    and s.get("file")
+                    and s.get("unused_names")
+                    for s in suggestions
+                ):
+                    continue
+
+            repair_task = {
+                "goal_id": "auto_repair",
+                "action": "patch",
+                "target": self._issue_target(issue),
+                "priority": priority,
+                "issue": issue,
+                "project": issue.get("project", "towarzysz"),
+                "reason": issue.get("issue", "")
+            }
+            if project_root:
+                repair_task["project_root"] = project_root
+
+            repair_tasks.append(repair_task)
+
+        if repair_tasks:
+            plan["goals"].append({
+                "id": "auto_repair",
+                "description": "Automatycznie napraw wykryte problemy",
+                "priority": "HIGH"
+            })
+            plan["tasks"].extend(repair_tasks[:5])
+
         plan["tasks"].sort(key=lambda t: PRIORITY_ORDER.get(t.get("priority", "LOW"), 3))
         plan["strategy"] = self._determine_strategy(plan)
         
@@ -82,6 +137,17 @@ class Architect:
         
         return plan
     
+    @staticmethod
+    def _issue_target(issue):
+        if issue.get("file"):
+            return issue["file"]
+
+        secrets = issue.get("secrets") or []
+        if secrets and secrets[0].get("file"):
+            return secrets[0]["file"]
+
+        return ""
+
     def _analyze_code_quality(self, agent_data):
         """Analizuje jakość kodu."""
         issues = []
@@ -89,7 +155,7 @@ class Architect:
         for f in agent_data.get("files", []):
             if f.get("lines", 0) > 200:
                 issues.append({
-                    "action": "refactor",
+                    "action": "review",
                     "target": f["path"],
                     "priority": "MEDIUM",
                     "reason": f"Wielki plik ({f['lines']} linii)"

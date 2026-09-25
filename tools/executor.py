@@ -4,6 +4,7 @@ Wykonuje wybrane narzędzia z rejestru
 """
 
 from datetime import datetime
+from core.observer_policy import tool_allowed, blocked
 
 
 class ToolExecutor:
@@ -34,6 +35,11 @@ class ToolExecutor:
         Returns:
             dict: Wynik wykonania
         """
+        if not tool_allowed(tool_name, args):
+            result = blocked("tool.execute", tool=tool_name)
+            self.registry.log_usage(tool_name, args, result)
+            self.execution_history.append(result)
+            return result
         result = {
             "timestamp": datetime.now().isoformat(),
             "tool": tool_name,

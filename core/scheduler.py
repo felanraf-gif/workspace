@@ -1,7 +1,7 @@
 import time
-import os
+from core.observer_storage import os, open
 from datetime import datetime, timedelta
-from core.config import SCAN_INTERVAL, MEMORY_PATH
+from core.config import MEMORY_PATH
 
 class Scheduler:
     def __init__(self):

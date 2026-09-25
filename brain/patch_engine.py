@@ -1,7 +1,7 @@
+from core.observer_policy import mutation, assert_write_path, scoped_open, scoped_remove, blocked
 import os
 import re
 import ast
-import subprocess
 from datetime import datetime
 from dataclasses import dataclass
 from tools.file_tools import FileTools
@@ -18,6 +18,7 @@ class Patch:
     confidence: float = 0.0
     backup_file: str | None = None
     applied: bool = False
+    existed_before: bool = False
 
 
 class PatchEngine:
@@ -134,7 +135,7 @@ class PatchEngine:
             return None
 
         content = read["content"]
-        names = unused.get("unused_names", [])
+        names = set(unused.get("unused_names", []))
         if not names:
             return None
 
@@ -143,37 +144,92 @@ class PatchEngine:
         except SyntaxError:
             return None
 
-        lines = content.splitlines(keepends=True)
-        removed_lines: set[int] = set()
+        module_ref = unused.get("module", "")
+        expected_module = (
+            module_ref.replace("\\", "/")
+            .removesuffix(".py")
+            .replace("/", ".")
+            .strip(".")
+        )
+        if expected_module.endswith(".__init__"):
+            expected_module = expected_module.removesuffix(".__init__")
 
-        module_key = unused.get("module", "").split("/")[-1].replace(".py", "")
+        lines = content.splitlines(keepends=True)
 
         for node in ast.walk(tree):
-            if isinstance(node, ast.ImportFrom):
-                if node.module and module_key in node.module:
-                    remaining = [n for n in node.names if n.asname or n.name not in names]
-                    if not remaining:
-                        removed_lines.update(range(node.lineno - 1, (node.end_lineno or node.lineno)))
-                    else:
-                        new_line = f"from {node.module} import {', '.join(n.asname or n.name for n in remaining)}\n"
-                        for i in range(node.lineno - 1, (node.end_lineno or node.lineno)):
-                            removed_lines.add(i)
-                        lines[node.lineno - 1] = new_line
+            if not isinstance(node, ast.ImportFrom):
+                continue
 
-        new_content = "".join(l for i, l in enumerate(lines) if i not in removed_lines)
-        if new_content == read["content"]:
-            return None
+            if node.level != 0 or not node.module:
+                continue
 
-        diff = self._generate_diff(filepath, read["content"], new_content)
-        return Patch(
-            issue_type="dependency",
-            file=filepath,
-            description=f"Usunięto nieużywane importy w {filepath}: {', '.join(names)}",
-            old_code=read["content"],
-            new_code=new_content,
-            diff=diff,
-            confidence=0.90,
-        )
+            # Exact module matching. Never use substring matching here.
+            if node.module != expected_module:
+                continue
+
+            # Star imports are too ambiguous for autonomous removal.
+            if any(alias.name == "*" for alias in node.names):
+                return None
+
+            # Be conservative with multiline imports. They may contain
+            # comments/formatting that a one-line rewrite could destroy.
+            if node.end_lineno and node.end_lineno != node.lineno:
+                return None
+
+            bindings = []
+            for alias in node.names:
+                binding = alias.asname or alias.name
+                if binding not in names:
+                    bindings.append(alias)
+
+            if len(bindings) == len(node.names):
+                return None
+
+            start_line = node.lineno - 1
+            end_line = node.end_lineno or node.lineno
+
+            if not bindings:
+                new_lines = lines[:start_line] + lines[end_line:]
+            else:
+                original_line = lines[start_line]
+                indent = original_line[:len(original_line) - len(original_line.lstrip())]
+
+                # Avoid silently deleting an inline comment.
+                if "#" in original_line:
+                    return None
+
+                rendered = ", ".join(
+                    f"{alias.name} as {alias.asname}" if alias.asname else alias.name
+                    for alias in bindings
+                )
+                replacement = f"{indent}from {node.module} import {rendered}\n"
+
+                new_lines = (
+                    lines[:start_line]
+                    + [replacement]
+                    + lines[end_line:]
+                )
+
+            new_content = "".join(new_lines)
+
+            if new_content == read["content"]:
+                return None
+
+            diff = self._generate_diff(filepath, read["content"], new_content)
+            return Patch(
+                issue_type="dependency",
+                file=filepath,
+                description=(
+                    f"Usunięto nieużywane importy w {filepath}: "
+                    f"{', '.join(sorted(names))}"
+                ),
+                old_code=read["content"],
+                new_code=new_content,
+                diff=diff,
+                confidence=0.90,
+            )
+
+        return None
 
     def _fix_file_open(self, func_info: dict) -> Patch | None:
         filepath = func_info.get("file", "")
@@ -333,43 +389,102 @@ class PatchEngine:
 
         return patches
 
+    # ── Verification ───────────────────────────────────────
+
+    def verify_patch(self, patch: Patch) -> tuple[bool, str]:
+        """Weryfikuje zmianę po zapisie, przed commitowaniem."""
+        try:
+            full_path = self._assert_write_path(self._resolve_path(patch.file))
+        except (ValueError, OSError) as e:
+            return False, str(e)
+
+        if not os.path.exists(full_path):
+            return False, "Plik docelowy nie istnieje po zapisie"
+
+        read = self.ft.read(full_path)
+        if not read.get("success"):
+            return False, read.get("error", "Nie można odczytać pliku po zapisie")
+
+        actual = read.get("content", "")
+
+        if actual != patch.new_code:
+            return False, "Zawartość pliku różni się od treści patcha"
+
+        if patch.file.lower().endswith(".py"):
+            try:
+                ast.parse(actual, filename=patch.file)
+            except SyntaxError as e:
+                return False, f"Błąd składni Python: {e}"
+
+        return True, "Weryfikacja OK"
+
     # ── Apply & Rollback ────────────────────────────────────
 
+    @mutation("brain/patch_engine.py:apply_patch", controlled=True)
     def apply_patch(self, patch: Patch) -> bool:
-        full_path = self._resolve_path(patch.file)
+        return bool(self.apply_patches([patch]))
 
-        if patch.old_code is not None and os.path.exists(full_path):
-            backup_path = f"{full_path}.backup.{datetime.now().strftime('%Y%m%d%H%M%S')}"
-            import shutil
-            shutil.copy2(full_path, backup_path)
-            patch.backup_file = backup_path
-
-        write_ok = self.ft.write(full_path, patch.new_code, backup=False)
-        if not write_ok.get("success"):
-            return False
-
-        patch.applied = True
-        self.applied_patches.append(patch)
-
-        self._git_commit(patch)
-        return True
-
+    @mutation("brain/patch_engine.py:apply_patches", controlled=True)
     def apply_patches(self, patches: list[Patch], auto_confirm: bool = True) -> list[Patch]:
-        applied: list[Patch] = []
-        for patch in patches:
-            ok = self.apply_patch(patch)
-            if ok:
-                applied.append(patch)
-        return applied
+        """Validate the entire batch, then write and verify; never execute Git."""
+        if auto_confirm is not True or not patches:
+            return []
+        prepared = []
+        touched = []
+        try:
+            # Preflight all targets and syntax before the first backup or write.
+            paths = [self._assert_write_path(self._resolve_path(p.file)) for p in patches]
+            if len(set(paths)) != len(paths):
+                return []
+            for patch in patches:
+                if patch.file.lower().endswith('.py'):
+                    ast.parse(patch.new_code, filename=patch.file)
+            for patch, path in zip(patches, paths):
+                patch.existed_before = os.path.exists(path)
+                patch.backup_file = None
+                if patch.existed_before:
+                    backup = f"{path}.backup.{datetime.now().strftime('%Y%m%d%H%M%S%f')}"
+                    # Exclusive creation also refuses a pre-existing backup symlink.
+                    with open(path, 'rb') as source, scoped_open(backup, 'xb') as dest:
+                        dest.write(source.read())
+                    patch.backup_file = backup
+                touched.append(patch)
+                if not self.ft.write(path, patch.new_code, backup=False).get('success'):
+                    raise OSError('Patch write failed')
+                valid, reason = self.verify_patch(patch)
+                if not valid:
+                    raise ValueError(reason)
+                prepared.append(patch)
+            for patch in prepared:
+                patch.applied = True
+            self.applied_patches.extend(prepared)
+            return prepared
+        except (OSError, ValueError, SyntaxError, RuntimeError):
+            for patch in reversed(touched):
+                if not self.rollback(patch):
+                    raise RuntimeError('R1: rollback failed; manual recovery required')
+            return []
 
+    @mutation("brain/patch_engine.py:_git_commit_batch")
+    def _git_commit_batch(self, patches: list[Patch]) -> bool:
+        return blocked('patch.git_commit_batch')
+
+    @mutation("brain/patch_engine.py:rollback", controlled=True)
     def rollback(self, patch: Patch) -> bool:
-        if not patch.backup_file or not os.path.exists(patch.backup_file):
+        try:
+            path = self._assert_write_path(self._resolve_path(patch.file))
+            if patch.existed_before:
+                if not patch.backup_file:
+                    return False
+                backup = self._assert_write_path(patch.backup_file)
+                with open(backup, 'rb') as source, scoped_open(path, 'wb') as dest:
+                    dest.write(source.read())
+            elif os.path.exists(path):
+                scoped_remove(path)
+            patch.applied = False
+            return True
+        except (OSError, ValueError, RuntimeError):
             return False
-        full_path = self._resolve_path(patch.file)
-        import shutil
-        shutil.copy2(patch.backup_file, full_path)
-        patch.applied = False
-        return True
 
     def preview(self, patches: list[Patch]) -> str:
         lines = []
@@ -385,6 +500,18 @@ class PatchEngine:
         if os.path.isabs(filepath):
             return filepath
         return os.path.join(self._project_root, filepath)
+
+    def _assert_write_path(self, full_path: str) -> str:
+        root = os.path.realpath(self._project_root)
+        target = os.path.realpath(full_path)
+
+        try:
+            if os.path.commonpath([root, target]) != root:
+                raise ValueError(f"Ścieżka poza project_root: {full_path}")
+        except ValueError:
+            raise ValueError(f"Ścieżka poza project_root: {full_path}")
+
+        return assert_write_path(target)
 
     def _to_env_name(self, name: str) -> str:
         s = re.sub(r"[\"'\s]", "", name)
@@ -402,12 +529,6 @@ class PatchEngine:
                     "module": s.get("module", ""),
                     "unused_names": s.get("unused_names", []),
                 })
-
-        from brain.code_graph import DependencyGraph
-        dg = DependencyGraph()
-        unused = dg.find_unused_imports({"files": [
-            {"name": "x.py", "path": "x.py", "full_path": "x.py"}
-        ]})
 
         return results
 
@@ -431,18 +552,6 @@ class PatchEngine:
                     return node
         return None
 
-    def _git_commit(self, patch: Patch) -> None:
-        try:
-            filepath = patch.file
-            subprocess.run(
-                ["git", "add", filepath],
-                capture_output=True, text=True, timeout=10,
-                cwd=self._project_root,
-            )
-            subprocess.run(
-                ["git", "commit", "-m", f"auto-patch: {patch.description[:60]}"],
-                capture_output=True, text=True, timeout=10,
-                cwd=self._project_root,
-            )
-        except Exception:
-            pass
+    @mutation("brain/patch_engine.py:_git_commit")
+    def _git_commit(self, patch: Patch) -> bool:
+        return blocked('patch.git_commit')

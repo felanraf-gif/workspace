@@ -4,6 +4,7 @@ Umożliwia lepsze rekomendacje oparte na AI
 """
 
 import os
+from core.observer_policy import mutation
 import json
 from typing import Optional
 
@@ -210,6 +211,7 @@ DLACZEGO: [krótkie uzasadnienie]
 """
         return prompt
     
+    @mutation("llm.external_request", read_only=lambda v: True)
     def _call_groq(self, prompt: str) -> Optional[str]:
         """Wywołuje Groq API."""
         try:
@@ -239,6 +241,7 @@ DLACZEGO: [krótkie uzasadnienie]
             print(f"[LLM] Groq exception: {e}")
             return None
     
+    @mutation("llm.external_request", read_only=lambda v: True)
     def _call_openai(self, prompt: str) -> Optional[str]:
         """Wywołuje OpenAI API."""
         try:
@@ -268,6 +271,7 @@ DLACZEGO: [krótkie uzasadnienie]
             print(f"[LLM] OpenAI exception: {e}")
             return None
     
+    @mutation("llm.external_request", read_only=lambda v: True)
     def _call_anthropic(self, prompt: str) -> Optional[str]:
         """Wywołuje Anthropic API."""
         try:

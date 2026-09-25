@@ -1,5 +1,6 @@
 # Środowiska wirtualne
 venv/
+.venv/
 tor_env/
 .env
 envs/
@@ -24,6 +25,7 @@ Thumbs.db
 # Logi
 *.log
 daemon.log
+towarzysz.pid
 
 # Pliki runtime i stanu
 memory/*.json

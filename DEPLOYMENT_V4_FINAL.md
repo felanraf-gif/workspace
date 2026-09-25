@@ -1,3 +1,5 @@
+> Dokument historyczny. Aktualny stan i granice walidacji: `STATUS_AKTUALNY.md` w katalogu głównym.
+
 # Wdrożenie Development Assistant V4 - Nowa Filozofia
 
 ## Data

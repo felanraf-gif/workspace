@@ -3,12 +3,13 @@ brain/analyzer.py - Inteligentna analiza projektów v8
 Rozszerzona analiza kodu: AST, TODO/FIXME, secrets, metryki złożoności
 """
 
-import os
+from core.observer_storage import os, open
 import re
 import ast
 import json
 import hashlib
 import requests
+from core.observer_policy import observer_mode, blocked
 from datetime import datetime, timedelta
 from core.config import PROJECTS_PATH, MEMORY_PATH, TODOIST_API_TOKEN, INTEGRATE_TODOIST, STAGNATION_DAYS
 from brain.code_graph import DependencyGraph
@@ -285,6 +286,24 @@ class Analyzer:
         if python_files:
             dg = DependencyGraph()
             dg_result = dg.build(project)
+            unused_imports = dg.find_unused_imports(project)
+            if unused_imports:
+                issues.append({
+                    "project": project_name,
+                    "issue": f"Znaleziono {len(unused_imports)} nieużywanych importów",
+                    "priority": "MEDIUM",
+                    "type": "dependency",
+                    "suggestions": [
+                        {
+                            "type": "unused_import",
+                            "file": item["file"],
+                            "module": item["module"],
+                            "unused_names": item["unused_names"],
+                        }
+                        for item in unused_imports[:20]
+                    ],
+                })
+
 
             for dead in dg_result["dead_code"]:
                 issues.append({
@@ -364,9 +383,13 @@ class Analyzer:
         
         secret_patterns = [
             (r'["\']api[_-]?key["\']\s*[:=]\s*["\'][^"\']+["\']', "API Key"),
+            (r'(?:^|\s)(?:API_KEY|API_SECRET|CLIENT_SECRET)\s*=\s*["\'][^"\']+["\']', "API Key"),
             (r'password\s*=\s*["\'][^"\']+["\']', "Password"),
+            (r'(?:^|\s)(?:PASSWORD|DB_PASSWORD|REDIS_PASSWORD)\s*=\s*["\'][^"\']+["\']', "Password"),
             (r'secret\s*=\s*["\'][^"\']+["\']', "Secret"),
+            (r'(?:^|\s)(?:SECRET|SECRET_KEY)\s*=\s*["\'][^"\']+["\']', "Secret"),
             (r'token\s*=\s*["\'][^"\']{20,}["\']', "Token"),
+            (r'(?:^|\s)(?:TOKEN|AUTH_TOKEN|ACCESS_TOKEN)\s*=\s*["\'][^"\']{20,}["\']', "Token"),
             (r'bearer\s+[a-zA-Z0-9]{32,}', "Bearer Token"),
             (r'github\.com/[a-zA-Z0-9_\-]+/[a-zA-Z0-9_\-]+:[a-zA-Z0-9_\-]+@', "Git credentials"),
         ]
@@ -525,6 +548,9 @@ class Analyzer:
             json.dump(state, f)
 
     def _get_todoist_completed(self, since_days=7):
+        if observer_mode():
+            blocked("todoist.completed_request")
+            return []
         if not INTEGRATE_TODOIST:
             return []
         

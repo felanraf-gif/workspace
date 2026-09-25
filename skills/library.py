@@ -3,7 +3,7 @@ skills/library.py - Skill Library
 Biblioteka umiejętności agenta
 """
 
-import os
+from core.observer_storage import os, open
 import json
 from datetime import datetime
 

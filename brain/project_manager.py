@@ -3,7 +3,7 @@ brain/project_manager.py - Zarządzanie projektami w multi-project V9
 Koordynuje cykl pracy per-projekt
 """
 
-import os
+from core.observer_storage import os, open
 import json
 from datetime import datetime
 from pathlib import Path

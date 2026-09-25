@@ -13,6 +13,7 @@ V9 Architecture:
 import time
 import os
 import sys
+sys.dont_write_bytecode = True
 from datetime import datetime
 
 sys_path = os.path.dirname(os.path.dirname(__file__))
@@ -20,13 +21,13 @@ if sys_path not in __import__('sys').path:
     __import__('sys').path.insert(0, sys_path)
 
 from core.config import MEMORY_PATH, OBSIDIAN_PATH, INTEGRATE_OBSIDIAN, INTEGRATE_TODOIST, WORKSPACE_PATH, PROJECT_SCAN_PATHS, ENABLE_PROJECT_DISCOVERY, ENABLE_PROJECT_AUTO_NOTES
-from core.constants import CHECKIN_INTERVAL_MINUTES, SCAN_INTERVAL_SECONDS, MAX_DAILY_TASKS
+from core.observer_policy import observer_mode, blocked
+from core.constants import SCAN_INTERVAL_SECONDS, MAX_DAILY_TASKS
 from memory.memory import Memory
 from brain.analyzer import Analyzer
 from brain.planner import Planner
 from brain.assistant import Assistant
 from brain.alerts import Alerts
-from brain.code_graph import DependencyGraph
 from brain.patch_engine import PatchEngine
 from integrations.obsidian import Obsidian
 from integrations.todoist import Todoist
@@ -74,19 +75,23 @@ def _log_to_file(msg):
     try:
         log_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "daemon.log")
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        with open(log_file, "a") as f:
+        from core.observer_storage import open as runtime_open
+        with runtime_open(log_file, "a") as f:
             f.write(f"[{timestamp}] {msg}\n")
     except:
         pass
 
 
-def main_loop():
+def main_loop(max_cycles=None):
     """Główna pętla systemu V9 z pełnym cyklem autonomous agent."""
     
     safe_print("=" * 50)
     safe_print("TOWARZYSZ V9 - Autonomous Agent")
     safe_print("=" * 50)
     
+    if observer_mode():
+        safe_print("[OBSERVER] Execution and external writes blocked; runtime state in RAM")
+        blocked("integrations.write", targets=["Obsidian", "Todoist"])
     memory = Memory()
     analyzer = Analyzer()
     planner = Planner()
@@ -138,7 +143,7 @@ def main_loop():
     safe_print("=" * 50)
     
     doc_file = os.path.join(OBSIDIAN_PATH, "Projects", "towarzysz_dokumentacja.md")
-    if not os.path.exists(doc_file):
+    if not observer_mode() and not os.path.exists(doc_file):
         saved = obsidian.save_agent_documentation()
         if saved:
             safe_print(f"[DOCS] 📚 Dokumentacja zapisana")
@@ -180,7 +185,7 @@ def main_loop():
             all_project_progress = []
             
             if project_discovery and project_tracker and project_recommender and project_manager:
-                if last_project_scan_date != today:
+                if observer_mode() or last_project_scan_date != today:
                     state["current_module"] = "project_discovery"
                     
                     try:
@@ -213,10 +218,10 @@ def main_loop():
                                         "recommendations_count": len([r for r in project_recommendations if r.get("project") == name])
                                     })
                                 
-                                if ENABLE_PROJECT_AUTO_NOTES and INTEGRATE_OBSIDIAN:
+                                if not observer_mode() and ENABLE_PROJECT_AUTO_NOTES and INTEGRATE_OBSIDIAN:
                                     obsidian.save_project_note(name, progress, [r for r in project_recommendations if r.get("project") == name])
                             
-                            if INTEGRATE_OBSIDIAN:
+                            if not observer_mode() and INTEGRATE_OBSIDIAN:
                                 obsidian.save_multi_project_dashboard(project_manager.get_summary())
                             
                             high_priority = [r for r in project_recommendations if r.get('priority') == 'HIGH']
@@ -250,27 +255,47 @@ def main_loop():
                 
                 for proj in focus_projects:
                     proj_name = proj.get("name")
-                    if not project_manager.should_run_cycle(proj_name, interval_hours=24):
+                    if not observer_mode() and not project_manager.should_run_cycle(proj_name, interval_hours=24):
                         continue
                     
                     safe_print(f"[PROJECT:{proj_name}] Uruchamianie cyklu...")
                     
-                    project_manager.update_project_state(proj_name, {
-                        "last_cycle": datetime.now().isoformat(),
-                        "v9_status": "RUNNING"
-                    })
-                    
-                    project_recommendations = [r for r in project_recommendations if r.get("project") == proj_name]
-                    
-                    high_recs = [r for r in project_recommendations if r.get("priority") == "HIGH"]
-                    medium_recs = [r for r in project_recommendations if r.get("priority") == "MEDIUM"]
+                    project_manager.update_project_state(proj_name, {"v9_status": "RUNNING"})
+
+                    project_recs = [
+                        recommendation for recommendation in project_recommendations
+                        if recommendation.get("project") == proj_name
+                    ]
+
+                    high_recs = [r for r in project_recs if r.get("priority") == "HIGH"]
+                    medium_recs = [r for r in project_recs if r.get("priority") == "MEDIUM"]
                     
                     safe_print(f"[PROJECT:{proj_name}] Rekomendacje: {len(high_recs)} HIGH, {len(medium_recs)} MEDIUM")
-                    
-                    project_manager.update_project_state(proj_name, {
-                        "v9_status": "COMPLETED",
-                        "recommendations": project_recommendations
-                    })
+
+                    try:
+                        project_result = role_manager.run_cycle(
+                            focus_on_agent=False,
+                            project=proj,
+                        )
+                        project_status = project_result.get("overall_status", "UNKNOWN")
+                        for task in project_result.get("recommendations", []):
+                            safe_print(f"[PROPOSED:{proj_name}] {task.get('priority')}: {task.get('action')} {task.get('target')}")
+                        project_manager.update_project_state(proj_name, {
+                            "last_cycle": datetime.now().isoformat(),
+                            "last_analysis": datetime.now().isoformat(),
+                            "v9_status": project_status,
+                            "recommendations": project_recs,
+                        })
+                        safe_print(
+                            f"[PROJECT:{proj_name}] Cykl: {project_status}; "
+                            f"zadań: {project_result.get('roles', {}).get('architect', {}).get('tasks_count', 0)}"
+                        )
+                    except Exception as e:
+                        project_manager.update_project_state(proj_name, {
+                            "v9_status": "FAILED",
+                            "recommendations": project_recs,
+                        })
+                        safe_print(f"[PROJECT:{proj_name}] Błąd cyklu: {e}")
             
             # ═══════════════════════════════════════════════════════
             # FAZA 1: V9 ROLE CYCLE (Scout → Architect → Builder → Critic)
@@ -281,7 +306,7 @@ def main_loop():
                 memory.save_state(state)
                 
                 try:
-                    safe_print("[ROLES] Running Scout → Architect → Builder → Critic cycle...")
+                    safe_print("[ROLES] Scout → Analyze → Architect (OBSERVER)" if observer_mode() else "[ROLES] Scout → Architect → Builder → Critic")
                     v9_result = role_manager.run_cycle(focus_on_agent=True)
                     
                     scout = v9_result.get("roles", {}).get("scout", {})
@@ -291,7 +316,12 @@ def main_loop():
                     
                     safe_print(f"  [Scout] Files: {scout.get('files_scanned', 0)}, Changes: {scout.get('changes_found', 0)}")
                     safe_print(f"  [Architect] Goals: {architect.get('goals_count', 0)}, Tasks: {architect.get('tasks_count', 0)}")
-                    safe_print(f"  [Builder] Success: {builder.get('success_rate', 0):.0%}, Failed: {builder.get('failed_count', 0)}")
+                    if observer_mode():
+                        safe_print(f"  [Builder] BLOCKED; proposed tasks: {builder.get('blocked_count', 0)}")
+                        for task in v9_result.get("recommendations", []):
+                            safe_print(f"  [PROPOSED] {task.get('priority')}: {task.get('action')} {task.get('target')}")
+                    else:
+                        safe_print(f"  [Builder] Success: {builder.get('success_rate', 0):.0%}, Failed: {builder.get('failed_count', 0)}")
                     safe_print(f"  [Critic] Verdict: {critic.get('verdict', 'N/A')}, Score: {critic.get('score', 0)}")
                     
                     if v9_result.get("reflections"):
@@ -346,7 +376,7 @@ def main_loop():
             # ═══════════════════════════════════════════════════════
             # FAZA 1c: PATCH ENGINE - Auto-poprawki
             # ═══════════════════════════════════════════════════════
-            if agent_intel and issues:
+            if not observer_mode() and v9_result is None and agent_intel and issues:
                 patch_engine = PatchEngine()
                 agent_project = agent_intel.get("structure", {}).copy()
                 agent_project["name"] = "towarzysz"
@@ -364,14 +394,14 @@ def main_loop():
                         applied = patch_engine.apply_patches(high)
                         safe_print(f"[PATCH] Aplikowano {len(applied)}/{len(high)} poprawek")
                         if applied:
-                            safe_print(f"[PATCH] Zmiany commitowane do gita")
+                            safe_print("[PATCH] Zmiany zapisane bez commita; Git pozostaje zablokowany")
 
                     if low:
                         safe_print(f"[PATCH] {len(low)} poprawek wymaga potwierdzenia:")
                         safe_print(patch_engine.preview(low))
 
             # Daily Standup o 6:00
-            if INTEGRATE_OBSIDIAN and standup.should_run() and not standup.was_run_today():
+            if not observer_mode() and INTEGRATE_OBSIDIAN and standup.should_run() and not standup.was_run_today():
                 tasks = planner.create_tomorrow_plan_from_intelligence(agent_intel) if agent_intel else []
                 focus = planner.select_focus_task(tasks)
                 standup.generate(focus, [], {"overall_status": "ANALYZING"}, planner)
@@ -418,7 +448,7 @@ def main_loop():
             # ═══════════════════════════════════════════════════════
             # FAZA 4: SAVE (Obsidian)
             # ═══════════════════════════════════════════════════════
-            if INTEGRATE_OBSIDIAN and agent_intel:
+            if not observer_mode() and INTEGRATE_OBSIDIAN and agent_intel:
                 state["current_module"] = "obsidian"
                 memory.save_state(state)
                 
@@ -436,7 +466,7 @@ def main_loop():
             # ═══════════════════════════════════════════════════════
             # FAZA 5: SYNC (Todoist)
             # ═══════════════════════════════════════════════════════
-            if INTEGRATE_TODOIST and tasks and memory.can_send_more_tasks(max_daily=MAX_DAILY_TASKS):
+            if not observer_mode() and INTEGRATE_TODOIST and tasks and memory.can_send_more_tasks(max_daily=MAX_DAILY_TASKS):
                 state["current_module"] = "todoist"
                 memory.save_state(state)
                 
@@ -453,7 +483,7 @@ def main_loop():
                 else:
                     safe_print(f"[TODOIST] ⚠️ Nie wysłano żadnych tasków (sprawdź log)")
             
-            if memory.can_check_todoist_again(minutes=15):
+            if not observer_mode() and memory.can_check_todoist_again(minutes=15):
                 memory.set_last_todoist_check()
                 todoist_stats = todoist.get_stats()
                 safe_print(f"[TODOIST] Aktywne: {todoist_stats['active_count']}, Dziś: {todoist_stats['completed_today']}")
@@ -478,6 +508,10 @@ def main_loop():
             safe_print(f"\n[{datetime.now().strftime('%H:%M')}] Cycle {cycle_count} | V9: {v9_status} | Issues: {len(issues)} | Tasks: {len(tasks)}")
             safe_print("-" * 50)
             
+            if max_cycles is not None and cycle_count >= max_cycles:
+                memory.save_state({"status": "stopped", "current_module": "complete"})
+                safe_print("[STOP] Requested cycles completed.")
+                return memory.get_state()
             time.sleep(SCAN_INTERVAL_SECONDS)
             
     except KeyboardInterrupt:
@@ -488,7 +522,12 @@ def main_loop():
         safe_print(f"\n[ERROR] {e}")
         import traceback
         traceback.print_exc()
+        raise
 
 
 if __name__ == "__main__":
-    main_loop()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--once", action="store_true")
+    args = parser.parse_args()
+    main_loop(max_cycles=1 if args.once else None)

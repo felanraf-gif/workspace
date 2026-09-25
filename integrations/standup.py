@@ -2,7 +2,8 @@
 integrations/standup.py - Daily Standup o 6:00
 """
 
-import os
+from core.observer_storage import os, open
+from core.observer_policy import mutation
 from datetime import datetime
 from core.constants import STATUS_ICONS, PRIORITY_ICONS
 
@@ -27,6 +28,7 @@ class Standup:
         filename = os.path.join(self.daily_dir, f"{today}_standup.md")
         return os.path.exists(filename)
     
+    @mutation("integrations/standup.py:generate")
     def generate(self, focus_task, projects, work_data, planner):
         """Generuje standup report."""
         if self.was_run_today():
