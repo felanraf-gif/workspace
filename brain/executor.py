@@ -5,6 +5,7 @@ Główny executor dla zadań
 
 from datetime import datetime
 from tools.executor import ToolExecutor
+from core.observer_policy import tool_allowed, blocked
 
 
 class Executor:
@@ -31,6 +32,10 @@ class Executor:
         Returns:
             dict: Wynik wykonania
         """
+        if not tool_allowed(task.get("tool"), task.get("args")):
+            result = blocked("executor.execute", tool=task.get("tool"))
+            self.execution_log.append(result)
+            return result
         result = {
             "timestamp": datetime.now().isoformat(),
             "task": task,

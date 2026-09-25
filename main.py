@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Development Assistant V2 - Main Entry Point
+Towarzysz V9 - Main Entry Point
 """
 
 import sys
+sys.dont_write_bytecode = True
 import os
 
 # Dodaj katalog główny do ścieżki
@@ -13,14 +14,18 @@ from core.loop import main_loop
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Development Assistant V2")
+    print("Towarzysz V9")
     print("System zarządzania projektami i monitorowania")
     print("- Obsidian & Todoist Integration")
     print("=" * 60)
     print("\nNaciśnij Ctrl+C aby zatrzymać system\n")
     
     try:
-        main_loop()
+        import argparse
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--once", action="store_true")
+        args = parser.parse_args()
+        main_loop(max_cycles=1 if args.once else None)
     except KeyboardInterrupt:
         print("\n\nSystem zatrzymany.")
     except Exception as e:

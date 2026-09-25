@@ -4,10 +4,10 @@ Używa integrations/todoist.py zamiast własnej implementacji
 """
 
 import json
-import os
+from core.observer_storage import os, open
 from datetime import datetime
 from core.config import INTEGRATE_TODOIST, MEMORY_PATH
-from core.constants import PRIORITY_ICONS, PRIORITY_ORDER, MAX_TASKS_PER_DAY, FOCUS_LABEL, TODOIST_LABELS
+from core.constants import PRIORITY_ICONS, PRIORITY_ORDER, FOCUS_LABEL, TODOIST_LABELS
 from integrations.todoist import Todoist
 
 

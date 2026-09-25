@@ -4,7 +4,9 @@ Operacje na git
 """
 
 import subprocess
+from core.observer_policy import git_filter_overrides
 import os
+from core.observer_policy import observer_mode, blocked, safe_git_args
 
 
 class GitTools:
@@ -15,10 +17,14 @@ class GitTools:
     
     def _run(self, command, cwd=None):
         """Uruchamia polecenie git."""
+        arguments = safe_git_args(command)
+        if arguments is None:
+            return blocked("git.command")
         try:
+            arguments[1:1] = git_filter_overrides(cwd or self.repo_path)
             proc = subprocess.run(
-                f"git {command}",
-                shell=True,
+                arguments,
+                shell=False,
                 cwd=cwd or self.repo_path,
                 capture_output=True,
                 text=True,

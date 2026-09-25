@@ -2,6 +2,7 @@
 integrations/todoist.py - Integracja z Todoist
 """
 
+from core.observer_policy import observer_mode, blocked
 import requests
 from datetime import datetime, timedelta
 from core.config import TODOIST_API_TOKEN, TODOIST_PROJECT, INTEGRATE_TODOIST
@@ -19,6 +20,9 @@ class Todoist:
 
     def _safe_request(self, method, url, **kwargs):
         """Bezpieczne wykonanie requesta z obsługą błędów."""
+        if observer_mode() or method.upper() not in {"GET", "HEAD"}:
+            blocked("todoist.request", method=method)
+            return None
         try:
             kwargs.setdefault('timeout', self.timeout)
             kwargs.setdefault('headers', self.headers)

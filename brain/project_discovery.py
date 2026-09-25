@@ -3,7 +3,7 @@ brain/project_discovery.py - Wykrywanie i zarządzanie projektami
 Automatycznie wykrywa projekty z różnych lokalizacji
 """
 
-import os
+from core.observer_storage import os, open
 import json
 import hashlib
 from datetime import datetime

@@ -3,7 +3,7 @@ brain/reflection/lesson_learner.py - Lesson Learner
 Wyciąga wnioski z wyników i zapisuje do pamięci
 """
 
-import os
+from core.observer_storage import os, open
 import json
 from datetime import datetime
 

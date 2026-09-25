@@ -1,3 +1,4 @@
+from core.observer_policy import mutation
 """
 tools/bash_tools.py - Bash Tools
 Uruchamianie poleceń bash i python
@@ -15,6 +16,7 @@ class BashTools:
         self.cwd = cwd
         self.timeout = timeout
     
+    @mutation("tools/bash_tools.py:run")
     def run(self, command, cwd=None, timeout=None, shell=True):
         """
         Uruchamia polecenie bash.
@@ -64,6 +66,7 @@ class BashTools:
         
         return result
     
+    @mutation("tools/bash_tools.py:run_python")
     def run_python(self, script, args=None, python_path=None):
         """
         Uruchamia skrypt Python.
@@ -89,11 +92,13 @@ class BashTools:
         
         return self.run(" ".join(cmd_args), shell=False)
     
+    @mutation("tools/bash_tools.py:check_output")
     def check_output(self, command, cwd=None):
         """Uruchamia i zwraca tylko stdout."""
         result = self.run(command, cwd=cwd)
         return result.get("stdout", "").strip()
     
+    @mutation("tools/bash_tools.py:is_available")
     def is_available(self, command):
         """Sprawdza czy polecenie jest dostępne."""
         result = self.run(f"which {command}", shell=True)

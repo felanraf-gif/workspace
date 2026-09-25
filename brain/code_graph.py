@@ -1,4 +1,4 @@
-import os
+from core.observer_storage import os, open
 import ast
 from collections import defaultdict
 

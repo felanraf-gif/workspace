@@ -1,4 +1,4 @@
-import os
+from core.observer_storage import os, open
 import json
 import hashlib
 from datetime import datetime

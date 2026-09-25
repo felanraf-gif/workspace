@@ -3,7 +3,8 @@ memory/memory.py - Uproszczony system pamięci
 Konsolidacja: memory_manager + time tracking
 """
 
-import os
+from core.observer_storage import os, open
+from core.observer_policy import mutation
 import json
 from datetime import datetime, timedelta
 from core.config import MEMORY_PATH, SYSTEM_PATH
@@ -34,6 +35,7 @@ class Memory:
         self.history_file = os.path.join(self.decisions_path, "work_history.json")
         self.time_log_file = os.path.join(MEMORY_PATH, "time_tracking.json")
         
+        os.makedirs(self.system_path, exist_ok=True)
         os.makedirs(self.decisions_path, exist_ok=True)
         os.makedirs(self.archive_path, exist_ok=True)
         os.makedirs(self.analytics_path, exist_ok=True)
@@ -117,6 +119,7 @@ class Memory:
         
         return {"trend": trend, "avg_score": round(avg_score, 1), "entries": len(history)}
 
+    @mutation("memory/memory.py:archive_old_files")
     def archive_old_files(self):
         """Archiwizuje stare plany."""
         if not os.path.exists(self.decisions_path):
@@ -139,6 +142,7 @@ class Memory:
                 except:
                     pass
 
+    @mutation("memory/memory.py:clear_old_cache")
     def clear_old_cache(self):
         """Czyści stary cache."""
         cache_files = [

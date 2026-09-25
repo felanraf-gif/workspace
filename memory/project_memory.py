@@ -3,7 +3,8 @@ memory/project_memory.py - Pamięć per-projekt dla multi-project V9
 Przechowuje historię, rekomendacje i stan dla każdego projektu osobno
 """
 
-import os
+from core.observer_storage import os, open
+from core.observer_policy import mutation
 import json
 from datetime import datetime
 from pathlib import Path
@@ -264,6 +265,7 @@ class MultiProjectMemory:
             stats.append(pm.get_productivity_stats())
         return stats
     
+    @mutation("memory/project_memory.py:cleanup_old_projects")
     def cleanup_old_projects(self, max_age_days=90):
         """Usuwa stare projekty bez aktywności."""
         projects = self.list_projects()

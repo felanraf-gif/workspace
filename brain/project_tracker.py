@@ -3,9 +3,10 @@ brain/project_tracker.py - Śledzenie postępów projektów
 Śledzi zmiany, commity i aktywność projektów
 """
 
-import os
+from core.observer_storage import os, open
 import json
 import subprocess
+from core.observer_policy import observer_mode, git_filter_overrides
 import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -70,40 +71,43 @@ class ProjectTracker:
             "has_uncommitted": False
         }
         
+        git = ["git", "--no-optional-locks", "--no-pager", "-c", "core.fsmonitor=false",
+                    "-c", "core.hooksPath=/dev/null", "-c", "log.showSignature=false",
+                    "-c", "status.submoduleSummary=false", "-c", "submodule.recurse=false",
+                    "-c", "diff.ignoreSubmodules=all"]
         try:
-            os.chdir(project_path)
-            
+            git[1:1] = git_filter_overrides(project_path)
             log_7d = subprocess.run(
-                ["git", "log", "--oneline", f"--since={datetime.now() - timedelta(days=7)}"],
-                capture_output=True, text=True, timeout=3
+                git + ["log", "--oneline", f"--since={datetime.now() - timedelta(days=7)}"],
+                capture_output=True, text=True, timeout=3, cwd=project_path
             )
             if log_7d.returncode == 0:
                 metrics["commits_last_7d"] = len(log_7d.stdout.strip().split('\n')) if log_7d.stdout.strip() else 0
             
             log_30d = subprocess.run(
-                ["git", "log", "--oneline", f"--since={datetime.now() - timedelta(days=30)}"],
-                capture_output=True, text=True, timeout=3
+                git + ["log", "--oneline", f"--since={datetime.now() - timedelta(days=30)}"],
+                capture_output=True, text=True, timeout=3, cwd=project_path
             )
             if log_30d.returncode == 0:
                 metrics["commits_last_30d"] = len(log_30d.stdout.strip().split('\n')) if log_30d.stdout.strip() else 0
             
             last_commit = subprocess.run(
-                ["git", "log", "-1", "--format=%ci"],
-                capture_output=True, text=True, timeout=3
+                git + ["log", "-1", "--format=%ci"],
+                capture_output=True, text=True, timeout=3, cwd=project_path
             )
             if last_commit.returncode == 0 and last_commit.stdout.strip():
                 metrics["last_commit_date"] = last_commit.stdout.strip()[:10]
             
             branches = subprocess.run(
-                ["git", "branch", "-a"],
-                capture_output=True, text=True, timeout=3
+                git + ["branch", "-a"],
+                capture_output=True, text=True, timeout=3, cwd=project_path
             )
             if branches.returncode == 0:
                 metrics["branches"] = [b.strip().replace("* ", "") for b in branches.stdout.strip().split('\n') if b.strip()]
             
             status = subprocess.run(
-                ["git", "status", "--porcelain"],
-                capture_output=True, text=True, timeout=3
+                git + ["status", "--ignore-submodules=all", "--porcelain"],
+                capture_output=True, text=True, timeout=3, cwd=project_path
             )
             metrics["has_uncommitted"] = bool(status.stdout.strip())
             
